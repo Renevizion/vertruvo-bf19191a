@@ -16,7 +16,7 @@ import {
 
 /**
  * HeroProductMock — A high-fidelity, seeded animated UI of the Thermi OS.
- * Pure CSS + a few timers. No real data. No interactivity. Brand: emerald (#059669).
+ * Pure CSS + a few timers. No real data. No interactivity. Brand: emerald (#dc2626).
  * Designed as a replacement for the stock Mac hero image.
  */
 export function HeroProductMock() {

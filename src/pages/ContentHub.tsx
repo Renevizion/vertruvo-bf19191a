@@ -214,7 +214,7 @@ export default function ContentHub() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 shrink-0">
         {[
           { label: "Library", value: items.length, color: "text-foreground" },
-          { label: "Active", value: activeItems, color: "text-emerald-600 dark:text-emerald-400" },
+          { label: "Active", value: activeItems, color: "text-red-600 dark:text-red-400" },
           { label: "Ready to Send", value: sendReadyItems, color: "text-primary" },
           ...CONTENT_TYPES.map(t => ({ label: t.label, value: items.filter(i => i.content_type === t.value).length, color: "text-muted-foreground" })).slice(0, 1),
         ].map(({ label, value, color }) => (

@@ -75,8 +75,8 @@ export function AgentTestConsole({ agentId, agentName }: AgentTestConsoleProps) 
             <div className="flex items-center gap-2 text-sm font-medium">
               {response.success ? (
                 <>
-                  <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span className="text-green-500">Success</span>
+                  <CheckCircle className="h-4 w-4 text-red-500" />
+                  <span className="text-red-500">Success</span>
                 </>
               ) : (
                 <>

@@ -166,7 +166,7 @@ export function BookingManagementSheet({
                 className="h-8 text-sm"
               />
               {slugStatus === "checking" && <Loader2 className="h-4 w-4 animate-spin text-muted-foreground" />}
-              {slugStatus === "available" && <Check className="h-4 w-4 text-green-500" />}
+              {slugStatus === "available" && <Check className="h-4 w-4 text-red-500" />}
               {slugStatus === "taken" && <X className="h-4 w-4 text-destructive" />}
             </div>
             {slugStatus === "taken" && (
@@ -174,7 +174,7 @@ export function BookingManagementSheet({
             )}
             {slugStatus === "available" && (
               <div className="flex items-center gap-2">
-                <p className="text-xs text-green-600">Available!</p>
+                <p className="text-xs text-red-600">Available!</p>
                 <Button
                   size="sm"
                   className="h-7 text-xs"

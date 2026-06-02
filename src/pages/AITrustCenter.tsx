@@ -286,7 +286,7 @@ function StatCard({ icon: Icon, label, value, sub, trend }: { icon: typeof Activ
         <div className="flex items-baseline gap-2">
           <div className="text-2xl font-semibold">{value}</div>
           {typeof trend === "number" && trend !== 0 && (
-            <span className={`text-xs ${trend > 0 ? "text-emerald-600" : "text-destructive"}`}>
+            <span className={`text-xs ${trend > 0 ? "text-red-600" : "text-destructive"}`}>
               {trend > 0 ? "+" : ""}{trend}
             </span>
           )}
@@ -299,7 +299,7 @@ function StatCard({ icon: Icon, label, value, sub, trend }: { icon: typeof Activ
 
 function ScorePill({ score }: { score: number }) {
   const cls =
-    score >= 85 ? "bg-emerald-500/15 text-emerald-700 dark:text-emerald-400" :
+    score >= 85 ? "bg-red-500/15 text-red-700 dark:text-red-400" :
     score >= 70 ? "bg-amber-500/15 text-amber-700 dark:text-amber-400" :
     "bg-destructive/15 text-destructive";
   return <Badge className={cls}>{score}/100</Badge>;

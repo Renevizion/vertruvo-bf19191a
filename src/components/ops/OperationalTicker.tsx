@@ -15,9 +15,9 @@ interface TickerEvent {
 const TYPE_MAP: Record<string, { icon: typeof Activity; tone: string; verb: string }> = {
   form_submission: { icon: FileText, tone: "text-primary", verb: "Form submitted" },
   email_sent: { icon: Mail, tone: "text-blue-600 dark:text-blue-400", verb: "Email sent" },
-  booking_created: { icon: Calendar, tone: "text-emerald-600 dark:text-emerald-400", verb: "Booking created" },
-  booking_closed: { icon: DollarSign, tone: "text-emerald-600 dark:text-emerald-400", verb: "Booking closed" },
-  payment_captured: { icon: DollarSign, tone: "text-emerald-600 dark:text-emerald-400", verb: "Payment captured" },
+  booking_created: { icon: Calendar, tone: "text-red-600 dark:text-red-400", verb: "Booking created" },
+  booking_closed: { icon: DollarSign, tone: "text-red-600 dark:text-red-400", verb: "Booking closed" },
+  payment_captured: { icon: DollarSign, tone: "text-red-600 dark:text-red-400", verb: "Payment captured" },
   agent_reply: { icon: Bot, tone: "text-purple-600 dark:text-purple-400", verb: "Agent replied" },
   conversation: { icon: MessageSquare, tone: "text-blue-600 dark:text-blue-400", verb: "Inbound message" },
 };
@@ -53,7 +53,7 @@ export function OperationalTicker() {
   const renderItems: TickerEvent[] = items.length
     ? items
     : [
-        { id: "idle-1", icon: Activity, label: "System listening", ago: "live", tone: "text-emerald-600 dark:text-emerald-400" },
+        { id: "idle-1", icon: Activity, label: "System listening", ago: "live", tone: "text-red-600 dark:text-red-400" },
         { id: "idle-2", icon: Bot, label: "Agents standing by", ago: "live", tone: "text-purple-600 dark:text-purple-400" },
         { id: "idle-3", icon: FileText, label: "Forms ready to receive", ago: "live", tone: "text-primary" },
       ];
@@ -61,7 +61,7 @@ export function OperationalTicker() {
   return (
     <div className="relative overflow-hidden rounded-xl border border-border/60 bg-card/60 backdrop-blur-sm">
       <div className="flex items-center gap-2 px-3 py-2 border-b border-border/40">
-        <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+        <span className="h-1.5 w-1.5 rounded-full bg-red-500 animate-pulse" />
         <span className="text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
           Live activity
         </span>

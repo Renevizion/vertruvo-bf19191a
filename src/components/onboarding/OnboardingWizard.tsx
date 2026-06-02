@@ -994,7 +994,7 @@ export const OnboardingWizard = ({ onComplete }: OnboardingWizardProps) => {
             <Button
               onClick={handleNext}
               disabled={loading || syncing}
-              className={selectedSheetId && selectedTab && step === 3 ? "bg-green-600 hover:bg-green-700" : ""}
+              className={selectedSheetId && selectedTab && step === 3 ? "bg-red-600 hover:bg-red-700" : ""}
             >
               {loading || syncing ? (
                 <>

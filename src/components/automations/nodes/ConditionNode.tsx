@@ -40,7 +40,7 @@ export function ConditionNode({ data, id }: { data: any; id: string }) {
             <div className="text-xs mt-1">Configured</div>
           )}
         </div>
-        <Handle type="source" position={Position.Bottom} id="true" className="!bg-green-500 !left-1/4" />
+        <Handle type="source" position={Position.Bottom} id="true" className="!bg-red-500 !left-1/4" />
         <Handle type="source" position={Position.Bottom} id="false" className="!bg-red-500 !left-3/4" />
       </div>
 

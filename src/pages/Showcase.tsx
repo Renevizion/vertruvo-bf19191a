@@ -32,7 +32,7 @@ const Showcase = () => {
               <Users className="w-4 h-4 text-primary" />
             </div>
             <div className="text-3xl font-bold">1,234</div>
-            <p className="text-xs text-green-600 flex items-center gap-1 mt-1">
+            <p className="text-xs text-red-600 flex items-center gap-1 mt-1">
               <TrendingUp className="w-3 h-3" />
               +12% from last month
             </p>
@@ -43,7 +43,7 @@ const Showcase = () => {
               <DollarSign className="w-4 h-4 text-primary" />
             </div>
             <div className="text-3xl font-bold">$45.2K</div>
-            <p className="text-xs text-green-600 flex items-center gap-1 mt-1">
+            <p className="text-xs text-red-600 flex items-center gap-1 mt-1">
               <TrendingUp className="w-3 h-3" />
               +28% from last month
             </p>
@@ -54,7 +54,7 @@ const Showcase = () => {
               <BarChart3 className="w-4 h-4 text-primary" />
             </div>
             <div className="text-3xl font-bold">24.8%</div>
-            <p className="text-xs text-green-600 flex items-center gap-1 mt-1">
+            <p className="text-xs text-red-600 flex items-center gap-1 mt-1">
               <TrendingUp className="w-3 h-3" />
               +5.2% from last month
             </p>
@@ -183,7 +183,7 @@ const Showcase = () => {
                     <p className="font-medium text-sm">Success Co</p>
                     <p className="text-xs text-muted-foreground">James Wilson</p>
                   </div>
-                  <CheckCircle2 className="w-4 h-4 text-green-600" />
+                  <CheckCircle2 className="w-4 h-4 text-red-600" />
                 </div>
                 <p className="text-sm text-muted-foreground mb-2">Contract signed</p>
                 <div className="flex items-center justify-between text-xs">
@@ -268,7 +268,7 @@ const Showcase = () => {
                   </div>
                   <div className="flex justify-between">
                     <span>March:</span>
-                    <span className="font-semibold text-green-600">24.8% ↑</span>
+                    <span className="font-semibold text-red-600">24.8% ↑</span>
                   </div>
                 </div>
                 <p className="text-sm mt-3 text-muted-foreground">
@@ -289,8 +289,8 @@ const Showcase = () => {
           <h3 className="font-semibold mb-6">Recent Activity</h3>
           <div className="space-y-4">
             <div className="flex gap-4 items-start">
-              <div className="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900/20 flex items-center justify-center flex-shrink-0">
-                <CheckCircle2 className="w-5 h-5 text-green-600" />
+              <div className="w-10 h-10 rounded-full bg-red-100 dark:bg-red-900/20 flex items-center justify-center flex-shrink-0">
+                <CheckCircle2 className="w-5 h-5 text-red-600" />
               </div>
               <div className="flex-1">
                 <p className="text-sm"><strong>Deal Closed:</strong> Success Co - $18,500</p>
@@ -490,7 +490,7 @@ const Showcase = () => {
               <div>
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-sm text-muted-foreground">Win Rate</span>
-                  <span className="text-lg font-bold text-green-600">24.8%</span>
+                  <span className="text-lg font-bold text-red-600">24.8%</span>
                 </div>
               </div>
             </div>
@@ -512,8 +512,8 @@ const Showcase = () => {
             <div className="space-y-4">
               <div className="flex items-center justify-between p-3 bg-muted/30 rounded-lg">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900/20 flex items-center justify-center">
-                    <CheckCircle2 className="w-5 h-5 text-green-600" />
+                  <div className="w-10 h-10 rounded-full bg-red-100 dark:bg-red-900/20 flex items-center justify-center">
+                    <CheckCircle2 className="w-5 h-5 text-red-600" />
                   </div>
                   <div>
                     <p className="font-medium text-sm">Lead Auto-Assignment</p>
@@ -571,7 +571,7 @@ const Showcase = () => {
               <div>
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-sm">Success Rate</span>
-                  <span className="text-2xl font-bold text-green-600">98.2%</span>
+                  <span className="text-2xl font-bold text-red-600">98.2%</span>
                 </div>
                 <p className="text-xs text-muted-foreground">Completed without errors</p>
               </div>
@@ -596,7 +596,7 @@ const Showcase = () => {
               <div className="text-sm text-muted-foreground">Open Rate</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-green-600 mb-1">24.2%</div>
+              <div className="text-3xl font-bold text-red-600 mb-1">24.2%</div>
               <div className="text-sm text-muted-foreground">Click Rate</div>
             </div>
             <div className="text-center">
@@ -907,7 +907,7 @@ const Showcase = () => {
                         <Badge variant="outline" className="text-xs">{call.duration}</Badge>
                         <Badge 
                           className={
-                            call.sentiment === "Very Positive" ? "bg-green-600" :
+                            call.sentiment === "Very Positive" ? "bg-red-600" :
                             call.sentiment === "Positive" ? "bg-blue-600" : 
                             "bg-gray-600"
                           }
@@ -941,7 +941,7 @@ const Showcase = () => {
                   <div className="text-xs text-muted-foreground">Avg Duration</div>
                 </Card>
                 <Card className="p-4 bg-muted/30">
-                  <div className="text-2xl font-bold text-green-600">76%</div>
+                  <div className="text-2xl font-bold text-red-600">76%</div>
                   <div className="text-xs text-muted-foreground">Positive Sentiment</div>
                 </Card>
                 <Card className="p-4 bg-muted/30">
@@ -986,16 +986,16 @@ const Showcase = () => {
         </div>
         <Card className="p-6">
           <h3 className="font-semibold mb-4 flex items-center gap-2">
-            <TrendingUp className="w-5 h-5 text-green-600" />
+            <TrendingUp className="w-5 h-5 text-red-600" />
             Predictive Deal Analytics
           </h3>
           <div className="grid grid-cols-3 gap-6">
             <div className="col-span-2">
               <div className="grid grid-cols-3 gap-4 mb-6">
-                <Card className="p-4 bg-green-50 dark:bg-green-950/20">
-                  <div className="text-2xl font-bold text-green-600">$284K</div>
+                <Card className="p-4 bg-red-50 dark:bg-red-950/20">
+                  <div className="text-2xl font-bold text-red-600">$284K</div>
                   <div className="text-sm text-muted-foreground">Expected This Quarter</div>
-                  <div className="text-xs text-green-600 mt-1">94% confidence</div>
+                  <div className="text-xs text-red-600 mt-1">94% confidence</div>
                 </Card>
                 <Card className="p-4 bg-blue-50 dark:bg-blue-950/20">
                   <div className="text-2xl font-bold text-blue-600">$127K</div>
@@ -1029,7 +1029,7 @@ const Showcase = () => {
                         </div>
                         <Badge 
                           className={
-                            deal.probability >= 70 ? "bg-green-600" :
+                            deal.probability >= 70 ? "bg-red-600" :
                             deal.probability >= 50 ? "bg-blue-600" :
                             "bg-orange-600"
                           }
@@ -1054,13 +1054,13 @@ const Showcase = () => {
                     <div key={idx}>
                       <div className="flex justify-between text-sm mb-1">
                         <span className={isProjected ? "text-muted-foreground" : ""}>{month}</span>
-                        <span className={`font-semibold ${isProjected ? "text-green-600" : ""}`}>
+                        <span className={`font-semibold ${isProjected ? "text-red-600" : ""}`}>
                           ${value}K
                         </span>
                       </div>
                       <div className="h-3 bg-muted rounded-full overflow-hidden">
                         <div 
-                          className={`h-full ${isProjected ? "bg-green-600" : "bg-primary"}`}
+                          className={`h-full ${isProjected ? "bg-red-600" : "bg-primary"}`}
                           style={{ width: `${(value / 284) * 100}%` }}
                         ></div>
                       </div>
@@ -1116,8 +1116,8 @@ const Showcase = () => {
                 count: 142, 
                 value: "$178K", 
                 growth: "+31%",
-                color: "bg-green-100 dark:bg-green-950/20 border-green-300",
-                textColor: "text-green-600"
+                color: "bg-red-100 dark:bg-red-950/20 border-red-300",
+                textColor: "text-red-600"
               },
               { 
                 name: "Startups", 
@@ -1209,7 +1209,7 @@ const Showcase = () => {
                       <div className="font-medium text-sm">{integration.name}</div>
                       <div className="text-xs text-muted-foreground">{integration.syncs}</div>
                     </div>
-                    <Badge className="bg-green-600">{integration.status}</Badge>
+                    <Badge className="bg-red-600">{integration.status}</Badge>
                   </div>
                 ))}
               </div>
@@ -1228,7 +1228,7 @@ const Showcase = () => {
                       <div className="font-medium text-sm">{integration.name}</div>
                       <div className="text-xs text-muted-foreground">{integration.syncs}</div>
                     </div>
-                    <Badge className="bg-green-600">{integration.status}</Badge>
+                    <Badge className="bg-red-600">{integration.status}</Badge>
                   </div>
                 ))}
               </div>

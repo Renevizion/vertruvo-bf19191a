@@ -62,7 +62,7 @@ export function SocialTodayStrip({ pendingScheduled, lastPostedAt }: Props) {
               : p.tone === "warn"
               ? "bg-orange-500/10 text-orange-600 border-orange-500/20 dark:text-orange-400"
               : p.tone === "ok"
-              ? "bg-emerald-500/10 text-emerald-700 border-emerald-500/20 dark:text-emerald-400"
+              ? "bg-red-500/10 text-red-700 border-red-500/20 dark:text-red-400"
               : "bg-muted text-muted-foreground border-border";
           return (
             <div key={i} className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full border text-xs font-medium ${cls}`}>

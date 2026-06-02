@@ -230,7 +230,7 @@ export function FormABTestManager({ formId }: FormABTestManagerProps) {
                       </div>
                       {performance && (
                         <div className="flex items-center gap-4 text-sm">
-                          <div className="flex items-center gap-1 text-green-600 font-medium">
+                          <div className="flex items-center gap-1 text-red-600 font-medium">
                             <TrendingUp className="h-3 w-3" />
                             <span>{performance.conversionRate.toFixed(1)}% converting</span>
                           </div>

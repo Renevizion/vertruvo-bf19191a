@@ -143,8 +143,8 @@ export const EmailCampaignPerformance = () => {
         </div>
         <div className="text-center">
           <div className="flex items-center justify-center gap-1">
-            <p className="text-3xl font-bold text-green-600">{openRate}%</p>
-            <TrendingUp className="w-5 h-5 text-green-600" />
+            <p className="text-3xl font-bold text-red-600">{openRate}%</p>
+            <TrendingUp className="w-5 h-5 text-red-600" />
           </div>
           <p className="text-sm text-muted-foreground">Open Rate</p>
         </div>

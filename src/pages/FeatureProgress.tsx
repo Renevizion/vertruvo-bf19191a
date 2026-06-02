@@ -140,7 +140,7 @@ export const FeatureProgress = () => {
                         className="flex items-start gap-3 p-3 rounded-lg border bg-card hover:bg-accent/50 transition-colors"
                       >
                         {feature.completed ? (
-                          <CheckCircle2 className="h-5 w-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                          <CheckCircle2 className="h-5 w-5 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5" />
                         ) : (
                           <Circle className="h-5 w-5 text-muted-foreground flex-shrink-0 mt-0.5" />
                         )}

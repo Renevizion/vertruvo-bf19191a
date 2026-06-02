@@ -17,8 +17,8 @@ export const EmailSettings = () => {
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
-          <div className="rounded-lg border bg-emerald-500/5 border-emerald-500/20 p-4 flex items-start gap-3">
-            <CheckCircle2 className="h-5 w-5 text-emerald-600 mt-0.5 shrink-0" />
+          <div className="rounded-lg border bg-red-500/5 border-red-500/20 p-4 flex items-start gap-3">
+            <CheckCircle2 className="h-5 w-5 text-red-600 mt-0.5 shrink-0" />
             <div>
               <p className="font-medium text-sm">Delivery active</p>
               <p className="text-xs text-muted-foreground mt-0.5">

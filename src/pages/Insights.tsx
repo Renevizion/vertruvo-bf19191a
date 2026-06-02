@@ -8,7 +8,7 @@ import { subDays } from "date-fns";
 
 const tiles = [
   { icon: Sparkles, label: "Pattern detection", body: "Surfaces what changed since last week and why.", color: "text-violet-600 bg-violet-400/10" },
-  { icon: TrendingUp, label: "Opportunity ranking", body: "Sorts leads, classes, and campaigns by upside.", color: "text-emerald-600 bg-emerald-400/10" },
+  { icon: TrendingUp, label: "Opportunity ranking", body: "Sorts leads, classes, and campaigns by upside.", color: "text-red-600 bg-red-400/10" },
   { icon: Target, label: "Next best step", body: "One concrete action per insight, no fluff.", color: "text-primary bg-primary/10" },
 ];
 

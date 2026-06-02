@@ -7,7 +7,7 @@ import { RefreshCw, ArrowRight, Check } from "lucide-react";
 const CONTENT_TYPES = [
   { id: "photo", label: "Photo", color: "bg-pink-100 text-pink-800 dark:bg-pink-900/30 dark:text-pink-400", emoji: "📸" },
   { id: "quote", label: "Quote", color: "bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-400", emoji: "💬" },
-  { id: "promo", label: "Promo", color: "bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400", emoji: "📢" },
+  { id: "promo", label: "Promo", color: "bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-400", emoji: "📢" },
   { id: "stats", label: "Stats", color: "bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400", emoji: "📊" },
   { id: "tips", label: "Tips", color: "bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-400", emoji: "💡" },
   { id: "about", label: "About", color: "bg-cyan-100 text-cyan-800 dark:bg-cyan-900/30 dark:text-cyan-400", emoji: "👋" },

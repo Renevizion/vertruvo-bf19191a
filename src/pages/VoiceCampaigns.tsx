@@ -92,7 +92,7 @@ export default function VoiceCampaigns() {
         {[
           { label: "Campaigns", value: totalCampaigns.toLocaleString(), icon: Radio, color: "text-primary bg-primary/10" },
           { label: "Total Calls", value: totalCalls.toLocaleString(), icon: Phone, color: "text-blue-600 bg-blue-400/10 dark:text-blue-400" },
-          { label: "Objective Met", value: `${metRate}%`, sub: `${metCount} of ${totalCalls}`, icon: CheckCircle2, color: "text-emerald-600 bg-emerald-400/10 dark:text-emerald-400" },
+          { label: "Objective Met", value: `${metRate}%`, sub: `${metCount} of ${totalCalls}`, icon: CheckCircle2, color: "text-red-600 bg-red-400/10 dark:text-red-400" },
           { label: "Live Now", value: activeNow.toLocaleString(), sub: activeNow > 0 ? "in progress" : "idle", icon: Target, color: activeNow > 0 ? "text-rose-600 bg-rose-400/10 dark:text-rose-400" : "text-muted-foreground bg-muted" },
         ].map(({ label, value, sub, icon: Icon, color }) => (
           <div key={label} className="rounded-xl border bg-card px-4 py-3">
@@ -152,7 +152,7 @@ export default function VoiceCampaigns() {
                         <div className="flex items-center justify-between">
                           <div className="flex gap-1.5">
                             <Badge variant="secondary" className="text-[10px] py-0 h-4">{c.total_recipients || 0} sent</Badge>
-                            <Badge className="text-[10px] py-0 h-4 bg-emerald-600 text-white">{succeeded} met</Badge>
+                            <Badge className="text-[10px] py-0 h-4 bg-red-600 text-white">{succeeded} met</Badge>
                           </div>
                           <p className="text-[10px] text-muted-foreground">{format(new Date(c.created_at), "MMM d")}</p>
                         </div>
@@ -177,7 +177,7 @@ export default function VoiceCampaigns() {
                           <p className="text-[10px] text-muted-foreground uppercase tracking-wide">Calls</p>
                         </div>
                         <div className="rounded-lg border bg-background/70 px-3 py-2 text-center">
-                          <p className="text-lg font-bold text-emerald-600 dark:text-emerald-400">{selectedSucceeded}</p>
+                          <p className="text-lg font-bold text-red-600 dark:text-red-400">{selectedSucceeded}</p>
                           <p className="text-[10px] text-muted-foreground uppercase tracking-wide">Met</p>
                         </div>
                         <div className="rounded-lg border bg-background/70 px-3 py-2 text-center">
@@ -257,7 +257,7 @@ function CallRow({ call, expanded, onToggle }: { call: any; expanded: boolean; o
         </div>
         <div className="flex items-center gap-2 shrink-0">
           <Badge variant="outline" className="text-[10px] capitalize">{call.status}</Badge>
-          {objMet === true && <Badge className="text-[10px] bg-emerald-600 text-white gap-1"><CheckCircle2 className="h-2.5 w-2.5" />Met</Badge>}
+          {objMet === true && <Badge className="text-[10px] bg-red-600 text-white gap-1"><CheckCircle2 className="h-2.5 w-2.5" />Met</Badge>}
           {objMet === false && <Badge variant="destructive" className="text-[10px] gap-1"><XCircle className="h-2.5 w-2.5" />Not met</Badge>}
           {objMet === null && call.status === "completed" && <Badge variant="secondary" className="text-[10px]">Evaluating…</Badge>}
         </div>

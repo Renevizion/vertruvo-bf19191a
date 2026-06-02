@@ -90,7 +90,7 @@ export function SalesReceiptDialog({ open, onOpenChange, sale, items, customer, 
         </DialogHeader>
 
         {/* Success banner */}
-        <div className="flex items-center gap-2 rounded-md bg-green-50 dark:bg-green-950/30 border border-green-200 dark:border-green-800 px-3 py-2 text-sm text-green-700 dark:text-green-400">
+        <div className="flex items-center gap-2 rounded-md bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-800 px-3 py-2 text-sm text-red-700 dark:text-red-400">
           <CheckCircle2 className="h-4 w-4 flex-shrink-0" />
           Transaction completed successfully
         </div>

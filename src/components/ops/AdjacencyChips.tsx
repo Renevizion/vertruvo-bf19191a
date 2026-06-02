@@ -14,7 +14,7 @@ const toneClass: Record<NonNullable<AdjacencyChip["tone"]>, string> = {
   default: "bg-muted/60 text-foreground/80 hover:bg-muted",
   primary: "bg-primary/10 text-primary hover:bg-primary/15 ring-1 ring-primary/15",
   warning: "bg-amber-500/10 text-amber-700 dark:text-amber-400 hover:bg-amber-500/15",
-  success: "bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 hover:bg-emerald-500/15",
+  success: "bg-red-500/10 text-red-700 dark:text-red-400 hover:bg-red-500/15",
   muted: "bg-muted/40 text-muted-foreground hover:bg-muted/70",
 };
 

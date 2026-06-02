@@ -83,7 +83,7 @@ export function AgentMonitoringView({ agentId, agentName, workspaceId, agent }: 
 
   const getStatusColor = (status: string) => {
     switch (status) {
-      case 'active': return 'bg-green-500/10 text-green-600 border-green-500/20';
+      case 'active': return 'bg-red-500/10 text-red-600 border-red-500/20';
       case 'draft': return 'bg-yellow-500/10 text-yellow-600 border-yellow-500/20';
       default: return 'bg-muted text-muted-foreground';
     }
@@ -414,7 +414,7 @@ export function AgentMonitoringView({ agentId, agentName, workspaceId, agent }: 
                     {usageData.map((usage, index) => (
                       <div key={usage.id} className="font-mono text-xs border rounded p-3 bg-muted/30">
                         <div className="flex items-center gap-2 text-muted-foreground mb-1">
-                          <span className="text-green-500">[SUCCESS]</span>
+                          <span className="text-red-500">[SUCCESS]</span>
                           <span>{new Date(usage.created_at!).toLocaleString()}</span>
                         </div>
                         <div className="text-foreground">
@@ -439,8 +439,8 @@ export function AgentMonitoringView({ agentId, agentName, workspaceId, agent }: 
             </CardHeader>
             <CardContent>
               <div className="flex flex-col items-center justify-center py-12 text-muted-foreground">
-                <AlertCircle className="h-12 w-12 mb-4 opacity-50 text-green-500" />
-                <p className="font-medium text-green-600">No Errors</p>
+                <AlertCircle className="h-12 w-12 mb-4 opacity-50 text-red-500" />
+                <p className="font-medium text-red-600">No Errors</p>
                 <p className="text-sm text-center max-w-sm mt-2">
                   Your agent is running smoothly. Errors will appear here if any issues occur during execution.
                 </p>

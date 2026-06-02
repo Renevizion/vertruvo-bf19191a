@@ -28,7 +28,7 @@ interface Step {
 
 const CHANNEL_META: Record<Channel, { label: string; icon: any; color: string; bg: string }> = {
   email: { label: "Email", icon: Mail, color: "text-primary", bg: "bg-primary/10" },
-  sms: { label: "SMS", icon: MessageSquare, color: "text-emerald-600", bg: "bg-emerald-400/10" },
+  sms: { label: "SMS", icon: MessageSquare, color: "text-red-600", bg: "bg-red-400/10" },
   voice: { label: "AI Call", icon: Phone, color: "text-violet-600", bg: "bg-violet-400/10" },
   voicemail: { label: "Voicemail Drop", icon: Voicemail, color: "text-amber-600", bg: "bg-amber-400/10" },
 };
@@ -184,7 +184,7 @@ export default function Outreach() {
                   </div>
                   <div className="rounded-xl border bg-card px-3 py-2.5">
                     <p className="text-[10px] uppercase tracking-wide text-muted-foreground font-medium">Running</p>
-                    <p className={cn("text-xl font-bold tabular-nums", runningCount > 0 ? "text-emerald-600" : "text-muted-foreground")}>{runningCount}</p>
+                    <p className={cn("text-xl font-bold tabular-nums", runningCount > 0 ? "text-red-600" : "text-muted-foreground")}>{runningCount}</p>
                   </div>
                 </div>
 
@@ -202,11 +202,11 @@ export default function Outreach() {
                     >
                       <div className="flex items-center justify-between px-3 py-2.5 border-b bg-muted/10">
                         <div className="flex items-center gap-2 min-w-0">
-                          <Circle className={cn("h-2 w-2 shrink-0 fill-current", c.status === "running" ? "text-emerald-500" : c.status === "paused" ? "text-amber-500" : "text-muted-foreground/30")} />
+                          <Circle className={cn("h-2 w-2 shrink-0 fill-current", c.status === "running" ? "text-red-500" : c.status === "paused" ? "text-amber-500" : "text-muted-foreground/30")} />
                           <span className="font-semibold text-sm truncate">{c.name}</span>
                         </div>
                         <Badge variant="outline" className={cn("text-[9px] capitalize shrink-0",
-                          c.status === "running" && "border-emerald-400/40 bg-emerald-400/10 text-emerald-600",
+                          c.status === "running" && "border-red-400/40 bg-red-400/10 text-red-600",
                           c.status === "paused" && "border-amber-400/40 bg-amber-400/10 text-amber-600"
                         )}>{c.status}</Badge>
                       </div>
@@ -239,7 +239,7 @@ export default function Outreach() {
                     <div className="px-6 py-5 border-b bg-muted/20 shrink-0 flex items-start justify-between gap-4">
                       <div className="min-w-0 flex-1">
                         <Badge variant="outline" className={cn("text-[10px] capitalize mb-2",
-                          selectedCampaign.status === "running" && "border-emerald-400/40 bg-emerald-400/10 text-emerald-600",
+                          selectedCampaign.status === "running" && "border-red-400/40 bg-red-400/10 text-red-600",
                           selectedCampaign.status === "paused" && "border-amber-400/40 bg-amber-400/10 text-amber-600"
                         )}>{selectedCampaign.status}</Badge>
                         <h2 className="text-xl font-bold">{selectedCampaign.name}</h2>
@@ -475,7 +475,7 @@ export default function Outreach() {
                 {previewCount !== null && (
                   <div className="rounded-xl border bg-muted/20 px-4 py-3 flex items-center justify-between">
                     <div className="flex items-center gap-2 text-sm">
-                      <CheckCircle2 className="h-4 w-4 text-emerald-500" />
+                      <CheckCircle2 className="h-4 w-4 text-red-500" />
                       <span className="font-bold">{previewCount}</span>
                       <span className="text-muted-foreground">leads matched</span>
                     </div>

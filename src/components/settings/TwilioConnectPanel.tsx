@@ -113,16 +113,16 @@ function StatusBar({
   onRefreshBalance: () => void;
 }) {
   return (
-    <div className="rounded-xl border bg-emerald-50 dark:bg-emerald-950/20 border-emerald-200 dark:border-emerald-800 px-5 py-4 flex flex-wrap items-center gap-4">
+    <div className="rounded-xl border bg-red-50 dark:bg-red-950/20 border-red-200 dark:border-red-800 px-5 py-4 flex flex-wrap items-center gap-4">
       <div className="flex items-center gap-2.5 flex-1 min-w-0">
-        <div className="h-8 w-8 rounded-full bg-emerald-500/15 flex items-center justify-center shrink-0">
-          <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+        <div className="h-8 w-8 rounded-full bg-red-500/15 flex items-center justify-center shrink-0">
+          <CheckCircle2 className="h-4 w-4 text-red-600" />
         </div>
         <div className="min-w-0">
-          <p className="text-sm font-semibold text-emerald-800 dark:text-emerald-300 truncate">
+          <p className="text-sm font-semibold text-red-800 dark:text-red-300 truncate">
             {accountName ?? "Twilio Connected"}
           </p>
-          <p className="text-xs text-emerald-700/70 dark:text-emerald-400/70">
+          <p className="text-xs text-red-700/70 dark:text-red-400/70">
             {connectedAt ? `Connected ${formatDistanceToNow(new Date(connectedAt), { addSuffix: true })}` : "Active"}
             {accountStatus ? ` · ${accountStatus}` : ""}
           </p>
@@ -130,14 +130,14 @@ function StatusBar({
       </div>
       {balance && (
         <div className="flex items-center gap-2">
-          <DollarSign className="h-4 w-4 text-emerald-600" />
-          <span className="text-sm font-semibold text-emerald-800 dark:text-emerald-300">
+          <DollarSign className="h-4 w-4 text-red-600" />
+          <span className="text-sm font-semibold text-red-800 dark:text-red-300">
             {balance.balance} {balance.currency}
           </span>
           <Button
             size="sm"
             variant="outline"
-            className="h-7 text-xs gap-1 border-emerald-300"
+            className="h-7 text-xs gap-1 border-red-300"
             onClick={() => window.open(balance.add_funds_url, "_blank")}
           >
             Add Funds <ExternalLink className="h-3 w-3" />
@@ -287,7 +287,7 @@ function NumbersPanel({ workspaceId }: { workspaceId: string }) {
               </div>
               <div className="flex items-center gap-2">
                 {n.voice_url?.includes("twilio-inbound-call") ? (
-                  <Badge variant="secondary" className="text-xs bg-emerald-100 text-emerald-700 border-emerald-200">
+                  <Badge variant="secondary" className="text-xs bg-red-100 text-red-700 border-red-200">
                     <PhoneIncoming className="h-3 w-3 mr-1" /> AI Ready
                   </Badge>
                 ) : (
@@ -429,7 +429,7 @@ function RoutingPanel({ workspaceId }: { workspaceId: string }) {
                         <p className="text-xs text-muted-foreground">{n.friendly_name}</p>
                       </div>
                       {isReady ? (
-                        <Badge className="bg-emerald-100 text-emerald-700 border-emerald-200 text-xs">
+                        <Badge className="bg-red-100 text-red-700 border-red-200 text-xs">
                           <CheckCircle2 className="h-3 w-3 mr-1" /> AI Active
                         </Badge>
                       ) : (
@@ -500,7 +500,7 @@ function CallLogsPanel({ workspaceId }: { workspaceId: string }) {
   const calls = data?.calls ?? [];
 
   const directionIcon = (dir: string) => {
-    if (dir === "inbound") return <PhoneIncoming className="h-3.5 w-3.5 text-emerald-600" />;
+    if (dir === "inbound") return <PhoneIncoming className="h-3.5 w-3.5 text-red-600" />;
     return <PhoneCall className="h-3.5 w-3.5 text-blue-600" />;
   };
 

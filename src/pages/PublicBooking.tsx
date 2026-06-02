@@ -432,7 +432,7 @@ export default function PublicBooking() {
                               {timing === "at_close" && <p className="text-[10px] text-slate-400">Charged after session</p>}
                             </div>
                           ) : (
-                            <span className="text-xs font-medium text-green-600">Free</span>
+                            <span className="text-xs font-medium text-red-600">Free</span>
                           )}
                         </div>
                       </div>
@@ -554,8 +554,8 @@ export default function PublicBooking() {
         {/* Step 5: Confirmation */}
         {step === "confirmed" && (
           <div className="text-center py-12">
-            <div className="mx-auto w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mb-4">
-              <CheckCircle2 className="h-8 w-8 text-green-600" />
+            <div className="mx-auto w-16 h-16 rounded-full bg-red-100 flex items-center justify-center mb-4">
+              <CheckCircle2 className="h-8 w-8 text-red-600" />
             </div>
             <h2 className="text-2xl font-bold text-slate-900 mb-2">You're booked!</h2>
             <p className="text-slate-500 mb-2">

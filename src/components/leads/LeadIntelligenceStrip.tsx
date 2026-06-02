@@ -99,7 +99,7 @@ export function LeadIntelligenceStrip({
 
   const TrendIcon = signals.trend > 0 ? TrendingUp : signals.trend < 0 ? TrendingDown : Minus;
   const trendColor = signals.trend > 0
-    ? 'text-emerald-600 dark:text-emerald-400'
+    ? 'text-red-600 dark:text-red-400'
     : signals.trend < 0 ? 'text-rose-600 dark:text-rose-400' : 'text-muted-foreground';
 
   return (

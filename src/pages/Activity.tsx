@@ -162,7 +162,7 @@ const Activity = () => {
 
   const getActivityColor = (type: string) => {
     switch (type) {
-      case "deal_closed": return "bg-green-100 dark:bg-green-900/20";
+      case "deal_closed": return "bg-red-100 dark:bg-red-900/20";
       case "call": return "bg-blue-100 dark:bg-blue-900/20";
       case "email": return "bg-purple-100 dark:bg-purple-900/20";
       case "meeting": return "bg-indigo-100 dark:bg-indigo-900/20";
@@ -173,7 +173,7 @@ const Activity = () => {
 
   const getIconColor = (type: string) => {
     switch (type) {
-      case "deal_closed": return "text-green-600";
+      case "deal_closed": return "text-red-600";
       case "call": return "text-blue-600";
       case "email": return "text-purple-600";
       case "meeting": return "text-indigo-600";

@@ -38,7 +38,7 @@ export function BillingSection() {
     if (source === 'stripe_past_due') return <Badge variant="destructive">Payment Failed</Badge>;
     if (source === 'stripe_trial') return <Badge className="bg-amber-500/10 text-amber-600 border-amber-500/30">Trial</Badge>;
     if (source === 'admin_override') return <Badge variant="outline" className="bg-purple-500/10 text-purple-600">Granted</Badge>;
-    if (subscription.isActive) return <Badge variant="outline" className="bg-green-500/10 text-green-600">Active</Badge>;
+    if (subscription.isActive) return <Badge variant="outline" className="bg-red-500/10 text-red-600">Active</Badge>;
     return <Badge variant="secondary">Free</Badge>;
   };
 

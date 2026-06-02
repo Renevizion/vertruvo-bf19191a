@@ -1076,7 +1076,7 @@ export function AgentTemplateLibrary() {
                       </Badge>
                     )}
                     {agentUsageData && agentUsageData[template.id] && (
-                      <Badge variant="default" className="bg-green-500">
+                      <Badge variant="default" className="bg-red-500">
                         {agentUsageData[template.id]} Active Implementation{agentUsageData[template.id] > 1 ? 's' : ''}
                       </Badge>
                     )}

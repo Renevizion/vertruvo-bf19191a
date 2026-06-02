@@ -134,7 +134,7 @@ export default function ShellInstances() {
                     <span className="font-semibold">{s.name}</span>
                     <Badge variant="outline" className="text-xs">{s.kind}</Badge>
                     {s.is_published ? (
-                      <Badge className="text-xs bg-emerald-600">Live</Badge>
+                      <Badge className="text-xs bg-red-600">Live</Badge>
                     ) : (
                       <Badge variant="secondary" className="text-xs">Draft</Badge>
                     )}

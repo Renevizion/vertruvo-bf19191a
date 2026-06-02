@@ -52,7 +52,7 @@ export function ShellRenderer({ instance }: { instance: ShellInstanceConfig }) {
       .filter((c) => Boolean(resolvedPath(c)) || c.key === "agent.chat");
   }, [instance.capabilityKeys, instance.workspaceSlug]);
 
-  const accent = instance.accentColor || "#059669";
+  const accent = instance.accentColor || "#dc2626";
   const brand = instance.brandName?.trim() || (instance.kind === "wl" ? instance.name : "Thermi");
   const isWhiteLabel = instance.kind === "wl" && Boolean(instance.brandName?.trim());
   const openMode = instance.layout?.openMode ?? "inline";

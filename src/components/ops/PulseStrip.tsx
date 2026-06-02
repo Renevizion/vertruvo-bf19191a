@@ -15,14 +15,14 @@ const toneRing: Record<NonNullable<PulseTile["tone"]>, string> = {
   default: "ring-border/60",
   primary: "ring-primary/25",
   warning: "ring-amber-500/30",
-  success: "ring-emerald-500/30",
+  success: "ring-red-500/30",
 };
 
 const toneIcon: Record<NonNullable<PulseTile["tone"]>, string> = {
   default: "bg-muted text-muted-foreground",
   primary: "bg-primary/10 text-primary",
   warning: "bg-amber-500/10 text-amber-600 dark:text-amber-400",
-  success: "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400",
+  success: "bg-red-500/10 text-red-600 dark:text-red-400",
 };
 
 interface PulseStripProps {
@@ -52,7 +52,7 @@ export function PulseStrip({ tiles, className }: PulseStripProps) {
             <div className={cn("h-9 w-9 rounded-lg flex items-center justify-center flex-shrink-0", toneIcon[t.tone || "default"])}>
               <Icon className="h-4 w-4" />
               {t.pulse && (
-                <span className="absolute top-1.5 right-1.5 h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                <span className="absolute top-1.5 right-1.5 h-1.5 w-1.5 rounded-full bg-red-500 animate-pulse" />
               )}
             </div>
             <div className="min-w-0 flex-1">

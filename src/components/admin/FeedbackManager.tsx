@@ -90,7 +90,7 @@ export const FeedbackManager = () => {
       case "in_progress":
         return "bg-yellow-500";
       case "resolved":
-        return "bg-green-500";
+        return "bg-red-500";
       case "dismissed":
         return "bg-gray-500";
       default:

@@ -88,7 +88,7 @@ export function ReferralProgram() {
         </Card>
         <Card>
           <CardContent className="pt-6 text-center">
-            <Award className="h-8 w-8 mx-auto mb-2 text-emerald-500" />
+            <Award className="h-8 w-8 mx-auto mb-2 text-red-500" />
             <p className="text-3xl font-bold">
               {rewards.filter(r => (referralData?.completedReferrals ?? 0) >= r.threshold).length}
             </p>

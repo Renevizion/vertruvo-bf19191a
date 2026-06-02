@@ -110,7 +110,7 @@ export function FormEmbedDialog({ open, onOpenChange, form }: FormEmbedDialogPro
       const result = await response.json();
       if (result.success) {
         messageDiv.style.display = 'block';
-        messageDiv.style.color = '#16a34a';
+        messageDiv.style.color = '#dc2626';
         messageDiv.textContent = 'Thank you! Your submission has been received.';
         e.target.reset();
       } else { throw new Error(result.error); }

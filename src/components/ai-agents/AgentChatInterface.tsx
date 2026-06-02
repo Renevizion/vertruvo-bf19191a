@@ -156,7 +156,7 @@ export function AgentChatInterface({ agent, onClose }: AgentChatInterfaceProps) 
             <h3 className="font-semibold">{agent.name}</h3>
             <p className="text-xs text-muted-foreground capitalize">{agent.type} Agent</p>
           </div>
-          <Badge variant="secondary" className="bg-green-100 text-green-700">
+          <Badge variant="secondary" className="bg-red-100 text-red-700">
             <Sparkles className="h-3 w-3 mr-1" />
             Active
           </Badge>
@@ -216,7 +216,7 @@ export function AgentChatInterface({ agent, onClose }: AgentChatInterfaceProps) 
                       onClick={() => handleFeedback(message.id, "positive")}
                       className={`p-1 rounded-md transition-colors ${
                         message.feedback === "positive" 
-                          ? "text-green-600 bg-green-100" 
+                          ? "text-red-600 bg-red-100" 
                           : "text-muted-foreground hover:text-foreground hover:bg-muted"
                       }`}
                       title="Helpful"

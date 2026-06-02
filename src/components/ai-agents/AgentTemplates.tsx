@@ -253,7 +253,7 @@ export function AgentTemplates({ workspaceId }: { workspaceId: string }) {
                       </Badge>
                     )}
                     {template.usage_count > 0 && (
-                      <Badge variant="outline" className="text-[10px] px-1.5 py-0 h-4 text-emerald-600 border-emerald-200">
+                      <Badge variant="outline" className="text-[10px] px-1.5 py-0 h-4 text-red-600 border-red-200">
                         {template.usage_count} {template.usage_count === 1 ? "user" : "users"}
                       </Badge>
                     )}

@@ -86,7 +86,7 @@ export const FeatureProgressWidget = () => {
                   key={feature.id}
                   className="flex items-start gap-2 text-sm p-2 rounded-lg bg-muted/50"
                 >
-                  <CheckCircle2 className="h-4 w-4 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-4 w-4 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5" />
                   <div className="flex-1 min-w-0">
                     <p className="font-medium truncate">
                       {feature.step_name.split(':')[1] || feature.step_name}
@@ -114,7 +114,7 @@ export const FeatureProgressWidget = () => {
         {/* Quick Stats */}
         <div className="grid grid-cols-3 gap-4 pt-4 border-t">
           <div className="text-center">
-            <p className="text-2xl font-bold text-green-600 dark:text-green-400">
+            <p className="text-2xl font-bold text-red-600 dark:text-red-400">
               {stats.completed}
             </p>
             <p className="text-xs text-muted-foreground">Active</p>

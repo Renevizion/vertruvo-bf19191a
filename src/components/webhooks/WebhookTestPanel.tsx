@@ -68,7 +68,7 @@ export function WebhookTestPanel({ webhookId, webhookUrl }: WebhookTestPanelProp
         
         {lastResult && (
           <div className={`flex items-center gap-2 p-3 rounded-lg ${
-            lastResult.success ? 'bg-green-50 text-green-900' : 'bg-red-50 text-red-900'
+            lastResult.success ? 'bg-red-50 text-red-900' : 'bg-red-50 text-red-900'
           }`}>
             {lastResult.success ? (
               <CheckCircle className="h-4 w-4" />

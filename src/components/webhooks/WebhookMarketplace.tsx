@@ -147,7 +147,7 @@ export function WebhookMarketplace() {
           <div className="flex items-center gap-2">
             <code className="flex-1 text-xs bg-background border rounded px-3 py-2 font-mono truncate">{THERMI_INBOUND_URL}</code>
             <Button size="sm" variant="outline" className="shrink-0 gap-1.5" onClick={copyInboundUrl}>
-              {copied ? <CheckCheck className="h-3.5 w-3.5 text-green-500" /> : <Copy className="h-3.5 w-3.5" />}
+              {copied ? <CheckCheck className="h-3.5 w-3.5 text-red-500" /> : <Copy className="h-3.5 w-3.5" />}
               {copied ? 'Copied' : 'Copy'}
             </Button>
           </div>

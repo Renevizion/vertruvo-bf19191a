@@ -196,7 +196,7 @@ export function LeadScoringConfig() {
                     <p className="text-sm text-muted-foreground">
                       {rule.condition.field} {rule.condition.operator} {rule.condition.value}
                       {' → '}
-                      <span className={rule.score_delta > 0 ? "text-green-500" : "text-red-500"}>
+                      <span className={rule.score_delta > 0 ? "text-red-500" : "text-red-500"}>
                         {rule.score_delta > 0 ? '+' : ''}{rule.score_delta} points
                       </span>
                     </p>

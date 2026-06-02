@@ -31,7 +31,7 @@ interface Insight {
 const typeConfig: Record<string, { label: string; icon: React.ElementType; color: string; bg: string }> = {
   conversion_rate: { label: "Conversion", icon: Zap, color: "text-blue-600", bg: "bg-blue-500/10" },
   best_contact_time: { label: "Timing", icon: Clock, color: "text-purple-600", bg: "bg-purple-500/10" },
-  lead_quality: { label: "Lead Quality", icon: Star, color: "text-emerald-600", bg: "bg-emerald-500/10" },
+  lead_quality: { label: "Lead Quality", icon: Star, color: "text-red-600", bg: "bg-red-500/10" },
   workflow_performance: { label: "Automation", icon: BarChart2, color: "text-orange-600", bg: "bg-orange-500/10" },
   revenue_trend: { label: "Revenue", icon: TrendingUp, color: "text-pink-600", bg: "bg-pink-500/10" },
 };
@@ -147,17 +147,17 @@ export function InsightsDashboard() {
                   <Icon className={`h-3.5 w-3.5 ${cfg.color}`} />
                 </div>
                 <span className="text-xs font-semibold truncate flex-1">{insight.title}</span>
-                {insight.trend === 'up' && <TrendingUp className="h-3.5 w-3.5 text-emerald-500 shrink-0" />}
+                {insight.trend === 'up' && <TrendingUp className="h-3.5 w-3.5 text-red-500 shrink-0" />}
                 {insight.trend === 'down' && <TrendingDown className="h-3.5 w-3.5 text-red-500 shrink-0" />}
                 {insight.trend === 'stable' && <Minus className="h-3.5 w-3.5 text-muted-foreground shrink-0" />}
               </div>
               <p className="text-[11px] text-muted-foreground line-clamp-2 leading-relaxed">{insight.description}</p>
               <div className="flex items-center gap-2 mt-2">
-                <span className={`text-xs font-bold tabular-nums ${insight.trend === 'up' ? 'text-emerald-600' : insight.trend === 'down' ? 'text-red-500' : 'text-foreground'}`}>
+                <span className={`text-xs font-bold tabular-nums ${insight.trend === 'up' ? 'text-red-600' : insight.trend === 'down' ? 'text-red-500' : 'text-foreground'}`}>
                   {insight.metric_value} {insight.metric_unit}
                 </span>
                 {insight.trend_percentage !== 0 && (
-                  <span className={`text-[10px] font-medium ${insight.trend === 'up' ? 'text-emerald-600' : 'text-red-500'}`}>
+                  <span className={`text-[10px] font-medium ${insight.trend === 'up' ? 'text-red-600' : 'text-red-500'}`}>
                     {insight.trend_percentage > 0 ? '+' : ''}{insight.trend_percentage}%
                   </span>
                 )}
@@ -204,7 +204,7 @@ export function InsightsDashboard() {
                 <p className="text-sm text-muted-foreground mt-0.5">{selected.metric_unit}</p>
               </div>
               {selected.trend_percentage !== 0 && (
-                <div className={`flex items-center gap-1.5 px-3 py-2 rounded-lg ${selected.trend === 'up' ? 'bg-emerald-500/10 text-emerald-600' : 'bg-red-500/10 text-red-600'}`}>
+                <div className={`flex items-center gap-1.5 px-3 py-2 rounded-lg ${selected.trend === 'up' ? 'bg-red-500/10 text-red-600' : 'bg-red-500/10 text-red-600'}`}>
                   {selected.trend === 'up' ? <TrendingUp className="h-4 w-4" /> : <TrendingDown className="h-4 w-4" />}
                   <span className="text-lg font-bold tabular-nums">{selected.trend_percentage > 0 ? '+' : ''}{selected.trend_percentage}%</span>
                 </div>

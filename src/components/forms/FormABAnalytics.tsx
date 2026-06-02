@@ -234,7 +234,7 @@ export function FormABAnalytics({ formId, onApplyWinner }: FormABAnalyticsProps)
                 {improvement !== 0 && (
                   <div
                     className={`flex items-center gap-1 text-sm ${
-                      improvement > 0 ? "text-green-600" : "text-red-600"
+                      improvement > 0 ? "text-red-600" : "text-red-600"
                     }`}
                   >
                     {improvement > 0 ? (

@@ -52,8 +52,8 @@ export function AgentCallFlow() {
       <div className="flex items-center justify-between px-4 py-3 border-b border-border bg-muted/30">
         <div className="flex items-center gap-2">
           <span className="relative inline-flex h-2.5 w-2.5">
-            <span className="absolute inset-0 rounded-full bg-emerald-500 animate-ping opacity-75" />
-            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500" />
+            <span className="absolute inset-0 rounded-full bg-red-500 animate-ping opacity-75" />
+            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-500" />
           </span>
           <span className="text-xs font-medium">Live call · 00:42</span>
         </div>
@@ -200,8 +200,8 @@ export function AgentCallFlow() {
         className="absolute -bottom-3 right-4 sm:right-6 rounded-xl border border-border bg-card px-3 py-2 shadow-xl flex items-center gap-2 text-xs font-medium"
         style={{ animation: "acfIn .5s ease-out 1.2s both" }}
       >
-        <div className="h-6 w-6 rounded-full bg-emerald-500/15 flex items-center justify-center">
-          <Calendar className="h-3.5 w-3.5 text-emerald-600" />
+        <div className="h-6 w-6 rounded-full bg-red-500/15 flex items-center justify-center">
+          <Calendar className="h-3.5 w-3.5 text-red-600" />
         </div>
         Appointment booked · Wed 2:00 PM
       </div>

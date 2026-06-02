@@ -29,7 +29,7 @@ export function useOptimisticState<T>(initial: T, save: (val: T) => Promise<void
 
 export function SyncDot({ status, className }: { status: SyncStatus; className?: string }) {
   const map: Record<SyncStatus, string> = {
-    synced: "bg-emerald-500",
+    synced: "bg-red-500",
     saving: "bg-amber-500 animate-pulse",
     error: "bg-destructive",
   };

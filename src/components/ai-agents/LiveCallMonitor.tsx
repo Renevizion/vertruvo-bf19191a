@@ -101,8 +101,8 @@ export function LiveCallMonitor({ agentId, workspaceId }: LiveCallMonitorProps) 
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           <span className="relative flex h-2.5 w-2.5">
-            <span className="absolute inset-0 rounded-full bg-emerald-500 opacity-75 animate-ping" />
-            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500" />
+            <span className="absolute inset-0 rounded-full bg-red-500 opacity-75 animate-ping" />
+            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-500" />
           </span>
           <p className="text-sm font-semibold">
             {liveCalls.length} live {liveCalls.length === 1 ? "call" : "calls"}
@@ -137,10 +137,10 @@ function LiveCallCard({ call }: { call: any }) {
   }, [transcript]);
 
   return (
-    <Card className="overflow-hidden border-emerald-500/30">
-      <div className="p-4 border-b bg-emerald-500/5 flex items-center justify-between gap-3">
+    <Card className="overflow-hidden border-red-500/30">
+      <div className="p-4 border-b bg-red-500/5 flex items-center justify-between gap-3">
         <div className="flex items-center gap-3 min-w-0">
-          <div className="h-9 w-9 rounded-lg bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0">
+          <div className="h-9 w-9 rounded-lg bg-red-500/15 text-red-600 dark:text-red-400 flex items-center justify-center shrink-0">
             <PhoneCall className="h-4 w-4" />
           </div>
           <div className="min-w-0">
@@ -156,7 +156,7 @@ function LiveCallCard({ call }: { call: any }) {
             <Clock className="h-3 w-3" />
             {elapsed}
           </div>
-          <Badge className="bg-emerald-600 text-white capitalize gap-1 text-[10px]">
+          <Badge className="bg-red-600 text-white capitalize gap-1 text-[10px]">
             <span className="relative flex h-1.5 w-1.5">
               <span className="absolute inset-0 rounded-full bg-white opacity-80 animate-ping" />
               <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-white" />
@@ -177,7 +177,7 @@ function LiveCallCard({ call }: { call: any }) {
                 <div
                   className={cn(
                     "h-1 flex-1 rounded-full transition-colors",
-                    active ? "bg-emerald-500" : "bg-muted",
+                    active ? "bg-red-500" : "bg-muted",
                     current && "animate-pulse"
                   )}
                 />
@@ -219,7 +219,7 @@ function LiveCallCard({ call }: { call: any }) {
                   className={cn(
                     "rounded-md px-2 py-1",
                     i === lastLines.length - 1
-                      ? "bg-emerald-500/10 text-foreground"
+                      ? "bg-red-500/10 text-foreground"
                       : "text-muted-foreground"
                   )}
                 >

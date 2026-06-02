@@ -122,7 +122,7 @@ const CallAnalytics = () => {
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'completed':
-        return 'bg-green-500';
+        return 'bg-red-500';
       case 'in-progress':
         return 'bg-blue-500';
       case 'failed':

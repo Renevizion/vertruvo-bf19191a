@@ -221,7 +221,7 @@ export function TwilioSettings() {
             )}
 
             {activeInboundAgent?.elevenlabs_agent_id && (
-              <div className="flex items-center gap-2 text-sm text-green-600">
+              <div className="flex items-center gap-2 text-sm text-red-600">
                 <CheckCircle2 className="w-4 h-4" />
                 <span>ElevenLabs AI will handle all inbound calls for this workspace.</span>
               </div>
@@ -304,7 +304,7 @@ export function TwilioSettings() {
                         </Badge>
                       )}
                       {number.inbound_webhook_configured ? (
-                        <Badge variant="default" className="bg-green-600">
+                        <Badge variant="default" className="bg-red-600">
                           <PhoneIncoming className="w-3 h-3 mr-1" />
                           Inbound Ready
                         </Badge>

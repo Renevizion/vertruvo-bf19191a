@@ -89,7 +89,7 @@ export const ImportStep = ({
         </div>
       ) : importMethod === 'sheets' && sheetsConnected ? (
         <div className="space-y-4">
-          <div className="flex items-center gap-2 text-green-600 dark:text-green-400 mb-4">
+          <div className="flex items-center gap-2 text-red-600 dark:text-red-400 mb-4">
             <CheckCircle2 className="h-5 w-5" />
             <span className="font-medium">Connected to Google Sheets</span>
           </div>
@@ -106,14 +106,14 @@ export const ImportStep = ({
           </div>
 
           {selectedSheetId && selectedTab && (
-            <div className="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-950/20 dark:to-emerald-950/20 rounded-lg p-4 border border-green-200 dark:border-green-900">
+            <div className="bg-gradient-to-r from-red-50 to-red-50 dark:from-red-950/20 dark:to-red-950/20 rounded-lg p-4 border border-red-200 dark:border-red-900">
               <div className="flex items-start gap-3">
-                <CheckCircle2 className="h-5 w-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                <CheckCircle2 className="h-5 w-5 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5" />
                 <div className="flex-1">
-                  <p className="font-semibold text-green-900 dark:text-green-100 mb-2">
+                  <p className="font-semibold text-red-900 dark:text-red-100 mb-2">
                     Ready to import!
                   </p>
-                  <p className="text-sm text-green-700 dark:text-green-300">
+                  <p className="text-sm text-red-700 dark:text-red-300">
                     Selected: <strong>{selectedSheetName}</strong> ({selectedTab})
                   </p>
                 </div>
@@ -142,7 +142,7 @@ export const ImportStep = ({
         </div>
       ) : importMethod === 'skip' ? (
         <div className="border rounded-lg p-6 bg-muted/30 text-center">
-          <CheckCircle2 className="h-12 w-12 mx-auto mb-3 text-green-500" />
+          <CheckCircle2 className="h-12 w-12 mx-auto mb-3 text-red-500" />
           <h4 className="font-medium mb-2">Great choice!</h4>
           <p className="text-sm text-muted-foreground">
             After setup, we'll guide you to create your first form — it generates an embed code you place on your business website to capture leads automatically.

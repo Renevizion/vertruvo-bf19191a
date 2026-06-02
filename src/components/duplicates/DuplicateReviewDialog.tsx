@@ -196,7 +196,7 @@ export function DuplicateReviewDialog({ open, onOpenChange, table }: Props) {
             </div>
           ) : visibleGroups.length === 0 && visibleCrossLinks.length === 0 ? (
             <div className="py-12 text-center text-sm text-muted-foreground">
-              <Check className="h-6 w-6 mx-auto mb-2 text-emerald-600" />
+              <Check className="h-6 w-6 mx-auto mb-2 text-red-600" />
               You're all clean. No duplicates detected.
             </div>
           ) : (
@@ -246,7 +246,7 @@ export function DuplicateReviewDialog({ open, onOpenChange, table }: Props) {
                             onClick={() => setKeepBy((p: any) => ({ ...p, [g.id]: r.id }))}
                             className={cn(
                               "text-left p-3 bg-background hover:bg-accent/40 transition-colors",
-                              isKeep && "bg-emerald-50 dark:bg-emerald-950/30 ring-1 ring-emerald-500/40"
+                              isKeep && "bg-red-50 dark:bg-red-950/30 ring-1 ring-red-500/40"
                             )}
                           >
                             <div className="flex items-center justify-between mb-1">
@@ -254,7 +254,7 @@ export function DuplicateReviewDialog({ open, onOpenChange, table }: Props) {
                                 {r.name || "(no name)"}
                               </span>
                               {isKeep ? (
-                                <Badge className="bg-emerald-600 hover:bg-emerald-600 text-white text-[10px] gap-1">
+                                <Badge className="bg-red-600 hover:bg-red-600 text-white text-[10px] gap-1">
                                   <Check className="h-3 w-3" /> Keep
                                 </Badge>
                               ) : (
