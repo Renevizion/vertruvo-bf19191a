@@ -1,0 +1,131 @@
+project_id = "dpbbylcycltexyknejcb"
+
+[functions]
+  [functions.agent-creator-ai]
+    verify_jwt = true
+  [functions.agent-runtime]
+    verify_jwt = true
+  [functions.auth-email-hook]
+    verify_jwt = false
+  [functions.check-subscription]
+    verify_jwt = true
+  [functions.cleanup-duplicates]
+    verify_jwt = true
+  [functions.create-checkout]
+    verify_jwt = true
+  [functions.create-staff-account]
+    verify_jwt = true
+  [functions.customer-portal]
+    verify_jwt = true
+  [functions.edit-social-image]
+    verify_jwt = true
+  [functions.elevenlabs-generate-audio]
+    verify_jwt = true
+  [functions.execute-webhook]
+    verify_jwt = true
+  [functions.form-submit]
+    verify_jwt = false
+  [functions.generate-insights]
+    verify_jwt = true
+  [functions.generate-social-image]
+    verify_jwt = true
+  [functions.generate-workflow-recommendations]
+    verify_jwt = true
+  [functions.google-drive-push]
+    verify_jwt = false
+  [functions.google-sheets-callback]
+    verify_jwt = false
+  [functions.google-sheets-headers]
+    verify_jwt = true
+  [functions.google-sheets-list]
+    verify_jwt = true
+  [functions.google-sheets-oauth]
+    verify_jwt = false
+  [functions.google-sheets-sync]
+    verify_jwt = true
+  [functions.google-sheets-tabs]
+    verify_jwt = true
+  [functions.handle-email-suppression]
+    verify_jwt = false
+  [functions.handle-email-unsubscribe]
+    verify_jwt = false
+  [functions.health-monitor]
+    verify_jwt = true
+  [functions.inbound-email]
+    verify_jwt = false
+  [functions.initialize-features]
+    verify_jwt = true
+  [functions.instagram-comments]
+    verify_jwt = true
+  [functions.instagram-insights]
+    verify_jwt = true
+  [functions.instagram-messages]
+    verify_jwt = true
+  [functions.instagram-oauth]
+    verify_jwt = true
+  [functions.instagram-oauth-callback]
+    verify_jwt = false
+  [functions.instagram-webhook]
+    verify_jwt = false
+  [functions.kiruvo-realtime-session]
+    verify_jwt = false
+  [functions.kiruvo-voice-assistant]
+    verify_jwt = true
+  [functions.kiruvo-voice-tools]
+    verify_jwt = false
+  [functions.kiruvo-voice-tts]
+    verify_jwt = true
+  [functions.mistral-agent]
+    verify_jwt = true
+  [functions.post-social-media]
+    verify_jwt = true
+  [functions.preview-transactional-email]
+    verify_jwt = false
+  [functions.process-email-queue]
+    verify_jwt = true
+  [functions.process-scheduled-posts]
+    verify_jwt = false
+  [functions.register-drive-watch]
+    verify_jwt = true
+  [functions.report-error]
+    verify_jwt = false
+  [functions.resend-webhook]
+    verify_jwt = false
+  [functions.send-campaign-email]
+    verify_jwt = true
+  [functions.send-email]
+    verify_jwt = true
+  [functions.send-transactional-email]
+    verify_jwt = true
+  [functions.send-workflow-email]
+    verify_jwt = true
+  [functions.sheets-webhook]
+    verify_jwt = false
+  [functions.stripe-webhook]
+    verify_jwt = false
+  [functions.sync-to-sheets]
+    verify_jwt = true
+  [functions.tiktok-oauth]
+    verify_jwt = true
+  [functions.tiktok-oauth-callback]
+    verify_jwt = false
+  [functions.trigger-form-view]
+    verify_jwt = false
+  [functions.twilio-end-call]
+    verify_jwt = true
+  [functions.twilio-make-call]
+    verify_jwt = true
+  [functions.twilio-purchase-number]
+    verify_jwt = true
+  [functions.twilio-search-numbers]
+    verify_jwt = true
+  [functions.twilio-status-callback]
+    verify_jwt = false
+  [functions.twilio-twiml]
+    verify_jwt = false
+  [functions.workflow-ai-assistant]
+    verify_jwt = true
+  [functions.workflow-executor]
+    verify_jwt = true
+  [functions.workflow-trigger]
+    verify_jwt = true

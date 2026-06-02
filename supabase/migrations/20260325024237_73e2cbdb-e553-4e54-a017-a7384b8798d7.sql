@@ -1,0 +1,1 @@
+ALTER TABLE public.business_settings ADD COLUMN portal_enabled boolean NOT NULL DEFAULT true;

@@ -1,0 +1,1 @@
+ALTER TABLE public.forms ADD COLUMN IF NOT EXISTS auto_response_config jsonb DEFAULT null;

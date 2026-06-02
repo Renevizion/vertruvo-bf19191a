@@ -1,0 +1,455 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+/* No focus rings anywhere */
+*:focus,
+*:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 0 0% 5%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 5%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 5%;
+
+    --primary: 161 93% 30%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 92%;
+    --secondary-foreground: 0 0% 9%;
+
+    --muted: 0 0% 94%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 161 70% 95%;
+    --accent-foreground: 161 93% 25%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 88%;
+    --input: 0 0% 88%;
+    --ring: 161 93% 30%;
+
+    --radius: 0.75rem;
+
+    --gradient-primary: linear-gradient(135deg, hsl(161 93% 30%), hsl(161 80% 42%));
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 98%));
+    --gradient-hero: radial-gradient(120% 80% at 0% 0%, hsl(161 70% 95%) 0%, hsl(0 0% 100%) 55%);
+    --gradient-subtle: linear-gradient(180deg, hsl(161 60% 97%) 0%, hsl(0 0% 100%) 100%);
+    --shadow-elevated: 0 1px 0 0 hsl(0 0% 0% / 0.04), 0 8px 24px -12px hsl(161 60% 25% / 0.18);
+    --shadow-glow: 0 0 0 1px hsl(161 70% 88%), 0 12px 30px -16px hsl(161 93% 30% / 0.35);
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 5%;
+    --sidebar-primary: 161 93% 30%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 96%;
+    --sidebar-accent-foreground: 0 0% 9%;
+    --sidebar-border: 0 0% 88%;
+    --sidebar-ring: 161 93% 30%;
+    --chart-1: 158 64% 51%;
+    --chart-2: 141 69% 58%;
+    --chart-3: 172 66% 50%;
+    --chart-4: 82 77% 55%;
+    --chart-5: 0 0% 45%;
+    --sidebar: 0 0% 100%;
+    --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+    --font-serif: 'Instrument Serif', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    --shadow-2xs: 0 1px 2px 0px hsl(0 0% 0% / 0.06);
+    --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.08);
+    --shadow-sm: 0 2px 4px 0px hsl(0 0% 0% / 0.08), 0 1px 2px -1px hsl(0 0% 0% / 0.08);
+    --shadow: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -2px hsl(0 0% 0% / 0.1);
+    --shadow-md: 0 6px 8px -2px hsl(0 0% 0% / 0.12), 0 4px 6px -3px hsl(0 0% 0% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -4px hsl(0 0% 0% / 0.1);
+    --shadow-xl: 0 20px 25px -5px hsl(0 0% 0% / 0.1), 0 8px 10px -6px hsl(0 0% 0% / 0.1);
+    --shadow-2xl: 0 25px 50px -12px hsl(0 0% 0% / 0.25);
+    --tracking-normal: 0em;
+    --spacing: 0.25rem;
+  }
+
+  .dark {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 11%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 11%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 158 64% 51%;
+    --primary-foreground: 0 0% 5%;
+
+    --secondary: 0 0% 16%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 16%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 158 40% 18%;
+    --accent-foreground: 158 64% 51%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 22%;
+    --input: 0 0% 22%;
+    --ring: 158 64% 51%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(158 64% 51%), hsl(158 60% 40%));
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 11%), hsl(0 0% 9%));
+    --gradient-hero: radial-gradient(120% 80% at 0% 0%, hsl(158 40% 14%) 0%, hsl(0 0% 7%) 55%);
+    --gradient-subtle: linear-gradient(180deg, hsl(158 30% 12%) 0%, hsl(0 0% 7%) 100%);
+    --shadow-elevated: 0 1px 0 0 hsl(0 0% 100% / 0.04), 0 8px 24px -12px hsl(0 0% 0% / 0.6);
+    --shadow-glow: 0 0 0 1px hsl(158 40% 22%), 0 12px 30px -16px hsl(158 64% 30% / 0.5);
+
+    --sidebar-background: 0 0% 11%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 158 64% 51%;
+    --sidebar-primary-foreground: 0 0% 5%;
+    --sidebar-accent: 0 0% 16%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 0 0% 22%;
+    --sidebar-ring: 158 64% 51%;
+    --chart-1: 156 71% 66%;
+    --chart-2: 141 76% 73%;
+    --chart-3: 170 76% 64%;
+    --chart-4: 81 84% 67%;
+    --chart-5: 0 0% 45%;
+    --sidebar: 0 0% 11%;
+    --shadow-2xs: 0 1px 2px 0px hsl(0 0% 0% / 0.3);
+    --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.4);
+    --shadow-sm: 0 2px 4px 0px hsl(0 0% 0% / 0.4), 0 1px 2px -1px hsl(0 0% 0% / 0.4);
+    --shadow: 0 4px 6px -1px hsl(0 0% 0% / 0.5), 0 2px 4px -2px hsl(0 0% 0% / 0.5);
+    --shadow-md: 0 6px 8px -2px hsl(0 0% 0% / 0.5), 0 4px 6px -3px hsl(0 0% 0% / 0.5);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.5), 0 4px 6px -4px hsl(0 0% 0% / 0.5);
+    --shadow-xl: 0 20px 25px -5px hsl(0 0% 0% / 0.5), 0 8px 10px -6px hsl(0 0% 0% / 0.5);
+    --shadow-2xl: 0 25px 50px -12px hsl(0 0% 0% / 0.6);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    margin: 0;
+    padding: 0;
+  }
+
+  #root {
+    height: 100%;
+  }
+
+  /* Prevent iOS zoom on input focus */
+  @supports (-webkit-touch-callout: none) {
+    input, select, textarea {
+      font-size: 16px !important;
+    }
+  }
+
+  /* Safe area padding for iPhone notch/home indicator */
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  .safe-top {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+}
+
+/* ============================================================
+   AAA · Display, Surfaces, Motion
+   Apple/Manus/Perplexity-tier primitives — usable on any screen.
+   ============================================================ */
+@layer utilities {
+  /* Display headline — Instrument Serif, italic-ready, tight, optical sized */
+  .font-display {
+    font-family: "Instrument Serif", ui-serif, Georgia, serif;
+    font-feature-settings: "ss01", "liga", "kern";
+    letter-spacing: 0em;
+  }
+  .text-display {
+    font-family: "Instrument Serif", ui-serif, Georgia, serif;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: 1.02;
+  }
+
+  /* Surfaces */
+  .surface-glass {
+    background: hsl(var(--card) / 0.72);
+    backdrop-filter: saturate(140%) blur(14px);
+    -webkit-backdrop-filter: saturate(140%) blur(14px);
+    border: 1px solid hsl(var(--border) / 0.7);
+  }
+  .surface-raised {
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-elevated);
+    border: 1px solid hsl(var(--border) / 0.6);
+  }
+  .surface-mesh {
+    background:
+      radial-gradient(60% 80% at 8% 0%, hsl(var(--primary) / 0.10) 0%, transparent 60%),
+      radial-gradient(50% 70% at 100% 0%, hsl(var(--primary) / 0.06) 0%, transparent 55%),
+      radial-gradient(80% 100% at 50% 120%, hsl(var(--accent) / 0.5) 0%, transparent 60%),
+      hsl(var(--background));
+  }
+
+  .thermi-app-shell {
+    height: 100dvh;
+    max-height: 100dvh;
+    overflow: hidden;
+    background:
+      radial-gradient(80% 70% at 18% -10%, hsl(var(--primary) / 0.10) 0%, transparent 58%),
+      radial-gradient(60% 55% at 100% 0%, hsl(var(--accent) / 0.55) 0%, transparent 62%),
+      linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted) / 0.36));
+  }
+  .thermi-app-main > * {
+    animation: aaa-reveal .38s cubic-bezier(.2,.7,.2,1) both;
+  }
+  .thermi-sidebar [data-sidebar="sidebar"] {
+    background:
+      linear-gradient(180deg, hsl(var(--sidebar-background) / 0.94), hsl(var(--sidebar-background) / 0.86)),
+      radial-gradient(110% 60% at 0% 0%, hsl(var(--primary) / 0.12), transparent 55%);
+    backdrop-filter: saturate(135%) blur(18px);
+    -webkit-backdrop-filter: saturate(135%) blur(18px);
+  }
+  .thermi-sidebar [data-sidebar="content"],
+  .thermi-app-main {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--foreground) / 0.16) transparent;
+  }
+  .thermi-sidebar [data-sidebar="content"]::-webkit-scrollbar,
+  .thermi-app-main::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+  .thermi-sidebar [data-sidebar="content"]::-webkit-scrollbar-track,
+  .thermi-app-main::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .thermi-sidebar [data-sidebar="content"]::-webkit-scrollbar-thumb,
+  .thermi-app-main::-webkit-scrollbar-thumb {
+    border: 2px solid transparent;
+    border-radius: 999px;
+    background-clip: content-box;
+    background-color: hsl(var(--foreground) / 0.15);
+  }
+  .thermi-sidebar [data-sidebar="content"]::-webkit-scrollbar-thumb:hover,
+  .thermi-app-main::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(var(--foreground) / 0.24);
+  }
+  .thermi-sidebar [data-sidebar="content"]::-webkit-scrollbar-button,
+  .thermi-app-main::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  .thermi-nav-item {
+    border: 1px solid transparent;
+    border-radius: calc(var(--radius) - 4px);
+    transition: background-color .18s ease, color .18s ease, transform .18s cubic-bezier(.2,.8,.2,1), border-color .18s ease, box-shadow .18s ease;
+  }
+  .thermi-nav-item:hover {
+    border-color: transparent;
+    background: transparent;
+    color: hsl(var(--sidebar-foreground));
+    transform: translateX(3px) scale(1.025);
+    box-shadow: none;
+  }
+  .thermi-nav-item:hover svg,
+  .thermi-nav-item:hover span {
+    color: hsl(var(--sidebar-foreground));
+  }
+  [data-collapsible="icon"] .thermi-nav-item:hover {
+    background: hsl(var(--sidebar-accent) / 0.46);
+    transform: translateX(2px) scale(1.08);
+  }
+  .thermi-rail-item {
+    color: hsl(var(--sidebar-foreground) / 0.72);
+    border: 1px solid transparent;
+  }
+  .thermi-rail-item:hover {
+    color: hsl(var(--sidebar-foreground));
+    border-color: hsl(var(--sidebar-border) / 0.42);
+    background: hsl(var(--sidebar-accent) / 0.24);
+    transform: translateX(2px) scale(1.035);
+  }
+  .thermi-rail-panel {
+    filter: drop-shadow(0 18px 26px hsl(var(--background) / 0.18));
+    max-height: min(72vh, 420px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--sidebar-foreground) / 0.18) transparent;
+  }
+  .thermi-rail-panel::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 -12px;
+    width: 12px;
+  }
+  .thermi-rail-feather {
+    border-left: 1px solid hsl(var(--sidebar-border) / 0.42);
+    background:
+      linear-gradient(90deg,
+        hsl(var(--sidebar-background) / 0.90) 0%,
+        hsl(var(--sidebar-background) / 0.78) 68%,
+        hsl(var(--sidebar-background) / 0.22) 100%);
+    backdrop-filter: blur(10px) saturate(120%);
+    -webkit-backdrop-filter: blur(10px) saturate(120%);
+  }
+  .thermi-rail-panel-item:hover,
+  .thermi-rail-panel-item:focus-visible {
+    color: hsl(var(--sidebar-foreground));
+    background: linear-gradient(90deg, hsl(var(--sidebar-accent) / 0.28), transparent);
+    transform: translateX(2px);
+  }
+  .thermi-nav-active {
+    box-shadow: 0 12px 26px -18px hsl(var(--sidebar-primary) / 0.9), inset 0 1px 0 hsl(var(--sidebar-primary-foreground) / 0.18);
+  }
+  .page-hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius);
+    border: 1px solid hsl(var(--border) / 0.62);
+    background:
+      radial-gradient(50% 120% at 8% 0%, hsl(var(--primary) / 0.10) 0%, transparent 55%),
+      radial-gradient(40% 110% at 100% 0%, hsl(var(--accent) / 0.72) 0%, transparent 58%),
+      hsl(var(--card) / 0.78);
+    box-shadow: var(--shadow-elevated);
+    padding: clamp(1rem, 2vw, 1.35rem);
+  }
+  .page-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, hsl(var(--foreground) / 0.12), transparent);
+  }
+  .thermi-card {
+    background:
+      linear-gradient(180deg, hsl(var(--card) / 0.95), hsl(var(--card) / 0.82)),
+      radial-gradient(90% 70% at 0% 0%, hsl(var(--primary) / 0.045), transparent 55%);
+    border-color: hsl(var(--border) / 0.65);
+    box-shadow: var(--shadow-elevated);
+    transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+  }
+  .thermi-card:hover {
+    border-color: hsl(var(--primary) / 0.22);
+    box-shadow: var(--shadow-glow);
+  }
+  .thermi-table {
+    border: 1px solid hsl(var(--border) / 0.62);
+    border-radius: var(--radius);
+    background: hsl(var(--card) / 0.72);
+  }
+
+  /* Hairlines & rings */
+  .ring-hairline { box-shadow: inset 0 0 0 1px hsl(var(--border) / 0.6); }
+  .ring-primary-soft { box-shadow: 0 0 0 1px hsl(var(--primary) / 0.18), 0 12px 30px -16px hsl(var(--primary) / 0.35); }
+
+  /* Numeric display */
+  .num-display { font-variant-numeric: tabular-nums lining-nums; font-feature-settings: "tnum","lnum","ss01"; letter-spacing: 0em; }
+
+  /* Animated dot grid backdrop (use as ::before via class) */
+  .bg-dotgrid {
+    background-image: radial-gradient(circle at 1px 1px, hsl(var(--foreground) / 0.08) 1px, transparent 0);
+    background-size: 22px 22px;
+  }
+
+  /* Subtle inner sheen for premium cards */
+  .sheen-top::after {
+    content: "";
+    position: absolute; inset: 0 0 auto 0; height: 1px;
+    background: linear-gradient(90deg, transparent, hsl(var(--foreground) / 0.12), transparent);
+    pointer-events: none;
+  }
+}
+
+/* Keyframes */
+@keyframes aaa-reveal {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes aaa-shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+@keyframes aaa-float {
+  0%, 100% { transform: translate3d(0,0,0); }
+  50%      { transform: translate3d(0,-3px,0); }
+}
+@keyframes aaa-aurora {
+  0%   { transform: translate3d(-6%, -4%, 0) rotate(0deg); }
+  50%  { transform: translate3d(6%, 4%, 0) rotate(8deg); }
+  100% { transform: translate3d(-6%, -4%, 0) rotate(0deg); }
+}
+
+@layer utilities {
+  .animate-reveal    { animation: aaa-reveal .42s cubic-bezier(.2,.7,.2,1) both; }
+  .animate-reveal-2  { animation: aaa-reveal .52s cubic-bezier(.2,.7,.2,1) .06s both; }
+  .animate-reveal-3  { animation: aaa-reveal .6s  cubic-bezier(.2,.7,.2,1) .12s both; }
+  .animate-float-slow{ animation: aaa-float 6s ease-in-out infinite; }
+  .animate-aurora    { animation: aaa-aurora 18s ease-in-out infinite; }
+  .shimmer-text {
+    background: linear-gradient(90deg,
+      hsl(var(--foreground)) 0%,
+      hsl(var(--primary)) 35%,
+      hsl(var(--foreground)) 70%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    animation: aaa-shimmer 6s linear infinite;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-reveal, .animate-reveal-2, .animate-reveal-3,
+  .animate-float-slow, .animate-aurora, .shimmer-text,
+  .thermi-app-main > * {
+    animation: none !important;
+  }
+  .thermi-nav-item:hover { transform: none; }
+}
+/* Mobile safety: prevent any rogue child from triggering page-level horizontal scroll. */
+html, body { overflow-x: hidden; max-width: 100vw; }
+
+/* Hide scrollbars for horizontal tab navs */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

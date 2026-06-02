@@ -1,0 +1,34 @@
+# Thermi
+
+> Thermi is an HVAC-focused AI CRM and AI agent platform that automates lead management, follow-ups, bookings, and customer engagement for residential and commercial HVAC teams.
+
+Thermi combines a full CRM (leads, contacts, customers, pipelines, kanban) with AI voice agents, AI chat agents, form auto-response, email campaigns, social media management, public booking pages, point-of-sale, group programs, and a customer self-service portal — all in one workspace.
+
+## What Thermi does
+- AI Voice Agents that call leads, qualify them, and book appointments
+- AI Chat Agents trained on your business that handle inbound questions 24/7
+- CRM with lead-to-customer conversion, deduplication, and bulk import
+- Public booking pages with Stripe payments and staff assignment
+- Email + SMS + social media campaigns from one inbox
+- Group program enrollment, renewals, and roster management
+- Customer portal for self-service scheduling and saved cards
+
+## Pricing
+- Starter — $60/mo: core CRM, forms, booking, email
+- Pro — $140/mo: adds AI voice agents, SMS outreach, advanced automations
+- Enterprise — $320/mo: white-glove setup, custom integrations, dedicated Twilio
+- 20% discount on annual plans
+- 14-day free trial, no card required
+
+## Who it's for
+HVAC businesses that book appointments, dispatch technicians, and manage maintenance plans: independent contractors, growing residential teams, and multi-location commercial HVAC operators.
+
+## Key links
+- Homepage: https://thermi.com
+- Pricing: https://thermi.com/pricing
+- Contact: https://thermi.com/contact
+- Privacy: https://thermi.com/privacy
+- Terms: https://thermi.com/terms
+
+## Contact
+For sales, support, or partnerships: visit https://thermi.com/contact

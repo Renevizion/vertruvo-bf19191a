@@ -1,0 +1,56 @@
+# Thermi - AI CRM Platform
+User-agent: *
+Allow: /
+Allow: /pricing
+Allow: /contact
+Allow: /privacy
+Allow: /terms
+Allow: /book/*
+
+# Block private/authenticated routes
+Disallow: /dashboard
+Disallow: /home
+Disallow: /leads
+Disallow: /contacts
+Disallow: /customers
+Disallow: /pipelines
+Disallow: /automations
+Disallow: /forms
+Disallow: /form-builder
+Disallow: /inbox
+Disallow: /calendar
+Disallow: /tasks
+Disallow: /settings
+Disallow: /admin
+Disallow: /ai-agents
+Disallow: /ai-chat
+Disallow: /analytics
+Disallow: /insights
+Disallow: /social-media
+Disallow: /content
+Disallow: /email-campaigns
+Disallow: /email-lists
+Disallow: /knowledge-bases
+Disallow: /call-history
+Disallow: /call-analytics
+Disallow: /call-templates
+Disallow: /booking-sheet
+Disallow: /activity
+Disallow: /portal
+Disallow: /api-docs
+
+# Social media crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# Sitemap location
+Sitemap: https://thermi.com/sitemap.xml
