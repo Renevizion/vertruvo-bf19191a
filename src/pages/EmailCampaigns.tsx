@@ -225,7 +225,7 @@ const EmailCampaigns = () => {
       case "draft": return <Badge variant="secondary" className="gap-1 text-[10px]"><Clock className="h-2.5 w-2.5" />Draft</Badge>;
       case "scheduled": return <Badge variant="outline" className="gap-1 text-[10px] border-amber-400/40 bg-amber-400/10 text-amber-600 dark:text-amber-400"><CalendarClock className="h-2.5 w-2.5" />{scheduledAt ? format(new Date(scheduledAt), "MMM d") : "Scheduled"}</Badge>;
       case "sending": return <Badge className="gap-1 text-[10px]"><Loader2 className="h-2.5 w-2.5 animate-spin" />Sending</Badge>;
-      case "sent": return <Badge className="gap-1 text-[10px] bg-emerald-600 text-white"><CheckCircle2 className="h-2.5 w-2.5" />Sent</Badge>;
+      case "sent": return <Badge className="gap-1 text-[10px] bg-red-600 text-white"><CheckCircle2 className="h-2.5 w-2.5" />Sent</Badge>;
       case "failed": return <Badge variant="destructive" className="gap-1 text-[10px]"><XCircle className="h-2.5 w-2.5" />Failed</Badge>;
       default: return <Badge variant="secondary" className="text-[10px]">{status}</Badge>;
     }
@@ -253,7 +253,7 @@ const EmailCampaigns = () => {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 shrink-0">
         {[
           { label: "Total", value: campaigns?.length || 0, color: "text-foreground" },
-          { label: "Sent", value: totalSent, color: "text-emerald-600 dark:text-emerald-400" },
+          { label: "Sent", value: totalSent, color: "text-red-600 dark:text-red-400" },
           { label: "Scheduled", value: totalScheduled, color: "text-amber-600 dark:text-amber-400" },
           { label: "Drafts", value: totalDrafts, color: "text-muted-foreground" },
         ].map(({ label, value, color }) => (

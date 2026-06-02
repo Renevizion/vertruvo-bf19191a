@@ -220,7 +220,7 @@ export const IntegrationEcosystem = () => {
                   <div className="font-medium text-sm">{integration.name}</div>
                   <Badge 
                     variant={integration.active ? "default" : "secondary"}
-                    className={integration.active ? "bg-green-600" : ""}
+                    className={integration.active ? "bg-red-600" : ""}
                   >
                     {integration.active ? <CheckCircle2 className="w-3 h-3 mr-1" /> : <AlertCircle className="w-3 h-3 mr-1" />}
                     {integration.status}
@@ -252,7 +252,7 @@ export const IntegrationEcosystem = () => {
                   <div className="font-medium text-sm">{integration.name}</div>
                   <Badge 
                     variant={integration.active ? "default" : "secondary"}
-                    className={integration.active ? "bg-green-600" : ""}
+                    className={integration.active ? "bg-red-600" : ""}
                   >
                     {integration.active ? <CheckCircle2 className="w-3 h-3 mr-1" /> : <AlertCircle className="w-3 h-3 mr-1" />}
                     {integration.status}

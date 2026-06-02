@@ -79,7 +79,7 @@ export function LiveEmpty({
                       <p className="text-[11px] text-muted-foreground truncate">{a.hint}</p>
                     )}
                   </div>
-                  <span className="ml-auto text-[10px] text-emerald-600 dark:text-emerald-400 font-medium">
+                  <span className="ml-auto text-[10px] text-red-600 dark:text-red-400 font-medium">
                     Ready
                   </span>
                 </div>

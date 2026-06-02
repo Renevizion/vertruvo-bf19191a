@@ -264,7 +264,7 @@ export function CSVImportDialog({ open, onOpenChange, onImportComplete }: CSVImp
         {step === 'map' && (
           <div className="space-y-4">
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <CheckCircle2 className="h-4 w-4 text-green-500" />
+              <CheckCircle2 className="h-4 w-4 text-red-500" />
               File loaded: {file?.name}
             </div>
 

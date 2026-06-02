@@ -70,7 +70,7 @@ export default function CapabilityMatrix() {
                     {SHELLS.map(s => (
                       <td key={s} className="p-2 text-center">
                         {cap.shellDefaults.includes(s) ? (
-                          <CheckCircle2 className="h-3.5 w-3.5 mx-auto text-emerald-600" aria-label={`${cap.key} default in ${s}`} />
+                          <CheckCircle2 className="h-3.5 w-3.5 mx-auto text-red-600" aria-label={`${cap.key} default in ${s}`} />
                         ) : (
                           <Circle className="h-3 w-3 mx-auto text-muted-foreground/30" aria-label={`${cap.key} not default in ${s}`} />
                         )}

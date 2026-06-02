@@ -373,7 +373,7 @@ function CampaignCard({ campaign: c, onClick }: { campaign: any; onClick: () => 
   const statusColor = {
     draft: "bg-muted text-muted-foreground",
     active: "bg-primary/10 text-primary",
-    completed: "bg-green-500/10 text-green-700",
+    completed: "bg-red-500/10 text-red-700",
   }[c.status as string] || "bg-muted text-muted-foreground";
 
   return (

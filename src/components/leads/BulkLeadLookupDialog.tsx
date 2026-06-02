@@ -319,7 +319,7 @@ export function BulkLeadLookupDialog({ open, onOpenChange, onLeadsAdded }: BulkL
           <div className="flex flex-col gap-4 min-h-0 flex-1">
             {/* Summary */}
             <div className="flex flex-wrap gap-2">
-              <Badge variant="outline" className="bg-green-500/10 text-green-700 border-green-200">
+              <Badge variant="outline" className="bg-red-500/10 text-red-700 border-red-200">
                 <CheckCircle2 className="h-3 w-3 mr-1" />
                 {foundCount} found
               </Badge>
@@ -343,7 +343,7 @@ export function BulkLeadLookupDialog({ open, onOpenChange, onLeadsAdded }: BulkL
                     key={i}
                     className={`flex items-center gap-2 p-2 rounded-lg border text-sm ${
                       result.found
-                        ? "bg-green-500/5 border-green-200/50"
+                        ? "bg-red-500/5 border-red-200/50"
                         : "bg-red-500/5 border-red-200/50"
                     }`}
                   >
@@ -357,7 +357,7 @@ export function BulkLeadLookupDialog({ open, onOpenChange, onLeadsAdded }: BulkL
                     
                     <div className="flex-shrink-0">
                       {result.found ? (
-                        <CheckCircle2 className="h-4 w-4 text-green-600" />
+                        <CheckCircle2 className="h-4 w-4 text-red-600" />
                       ) : (
                         <XCircle className="h-4 w-4 text-red-400" />
                       )}

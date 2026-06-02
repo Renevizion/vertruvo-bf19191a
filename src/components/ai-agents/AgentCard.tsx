@@ -128,12 +128,12 @@ export function AgentCard({ agent, onUpdate, onOpenMonitoring, onEdit }: AgentCa
     <Card
       className={cn(
         "group relative overflow-hidden cursor-pointer transition-all duration-200 hover:shadow-md hover:-translate-y-0.5",
-        isActive ? "border-emerald-500/30 bg-gradient-to-br from-emerald-500/5 to-transparent" : "hover:border-primary/30"
+        isActive ? "border-red-500/30 bg-gradient-to-br from-red-500/5 to-transparent" : "hover:border-primary/30"
       )}
       onClick={() => onOpenMonitoring?.(agent.id)}
     >
       {isActive && (
-        <div className="absolute top-0 left-0 right-0 h-0.5 bg-emerald-500" />
+        <div className="absolute top-0 left-0 right-0 h-0.5 bg-red-500" />
       )}
 
 
@@ -151,9 +151,9 @@ export function AgentCard({ agent, onUpdate, onOpenMonitoring, onEdit }: AgentCa
                 <h3 className="font-semibold text-sm leading-tight truncate">{agent.name}</h3>
                 <Badge variant="outline" className={cn(
                   "text-[10px] px-1.5 py-0 h-4 font-medium border-0",
-                  isActive ? "bg-emerald-500/15 text-emerald-600 dark:text-emerald-400" : "bg-muted text-muted-foreground"
+                  isActive ? "bg-red-500/15 text-red-600 dark:text-red-400" : "bg-muted text-muted-foreground"
                 )}>
-                  {isActive && <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1 inline-block" />}
+                  {isActive && <span className="w-1.5 h-1.5 rounded-full bg-red-500 mr-1 inline-block" />}
                   {isActive ? "Live" : "Draft"}
                 </Badge>
                 {blueprint && (

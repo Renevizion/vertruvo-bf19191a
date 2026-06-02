@@ -13,7 +13,7 @@ interface Props {
 
 const STATUS_COLORS: Record<string, string> = {
   pending:      "bg-muted text-muted-foreground",
-  renewing:     "bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200",
+  renewing:     "bg-red-100 text-red-800 dark:bg-red-900/40 dark:text-red-200",
   moving:       "bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-200",
   not_renewing: "bg-rose-100 text-rose-800 dark:bg-rose-900/40 dark:text-rose-200",
   waitlist:     "bg-sky-100 text-sky-800 dark:bg-sky-900/40 dark:text-sky-200",

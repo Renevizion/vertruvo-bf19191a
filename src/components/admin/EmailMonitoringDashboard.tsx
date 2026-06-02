@@ -12,7 +12,7 @@ import { format } from "date-fns";
 type TimeRange = "24h" | "7d" | "30d";
 
 const STATUS_COLORS: Record<string, string> = {
-  sent: "bg-emerald-500/10 text-emerald-700 border-emerald-300",
+  sent: "bg-red-500/10 text-red-700 border-red-300",
   pending: "bg-amber-500/10 text-amber-700 border-amber-300",
   dlq: "bg-red-500/10 text-red-700 border-red-300",
   failed: "bg-red-500/10 text-red-700 border-red-300",
@@ -132,7 +132,7 @@ export function EmailMonitoringDashboard() {
         </Card>
         <Card>
           <CardContent className="pt-6 text-center">
-            <CheckCircle className="h-6 w-6 mx-auto mb-1 text-emerald-500" />
+            <CheckCircle className="h-6 w-6 mx-auto mb-1 text-red-500" />
             <p className="text-2xl font-bold">{stats?.sent ?? 0}</p>
             <p className="text-xs text-muted-foreground">Sent</p>
           </CardContent>

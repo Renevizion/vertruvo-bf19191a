@@ -74,7 +74,7 @@ export function StaffManagement() {
       owner: "bg-purple-500",
       admin: "bg-red-500",
       manager: "bg-blue-500",
-      agent: "bg-green-500",
+      agent: "bg-red-500",
       user: "bg-gray-500",
     };
     return colors[role] || "bg-gray-500";

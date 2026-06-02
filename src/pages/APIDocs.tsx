@@ -102,7 +102,7 @@ const endpoints: Record<string, EndpointDoc[]> = {
 };
 
 const methodColors: Record<string, string> = {
-  GET: "bg-emerald-500/10 text-emerald-700 border-emerald-300",
+  GET: "bg-red-500/10 text-red-700 border-red-300",
   POST: "bg-blue-500/10 text-blue-700 border-blue-300",
   PUT: "bg-amber-500/10 text-amber-700 border-amber-300",
   DELETE: "bg-red-500/10 text-red-700 border-red-300",

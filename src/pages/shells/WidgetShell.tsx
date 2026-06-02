@@ -30,7 +30,7 @@ export default function WidgetShell() {
       shell="widget"
       title="Thermi Widget"
       subtitle="Embeddable on any third-party site"
-      accent="bg-gradient-to-br from-emerald-500 to-emerald-700"
+      accent="bg-gradient-to-br from-red-500 to-red-700"
       defaultCapability="agent.chat"
       onPickCapability={(k) => {
         const cap = CAPABILITIES[k];

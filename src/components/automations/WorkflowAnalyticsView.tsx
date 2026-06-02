@@ -66,7 +66,7 @@ export function WorkflowAnalyticsView({ workflowId }: WorkflowAnalyticsViewProps
 
   const getMetricIcon = (type: string) => {
     switch(type) {
-      case 'success_rate': return <CheckCircle2 className="h-4 w-4 text-green-500" />;
+      case 'success_rate': return <CheckCircle2 className="h-4 w-4 text-red-500" />;
       case 'error_rate': return <AlertCircle className="h-4 w-4 text-red-500" />;
       case 'avg_duration': return <Clock className="h-4 w-4 text-blue-500" />;
       default: return <TrendingUp className="h-4 w-4" />;
@@ -113,7 +113,7 @@ export function WorkflowAnalyticsView({ workflowId }: WorkflowAnalyticsViewProps
                 <Card>
                   <CardHeader className="pb-2">
                     <div className="flex items-center gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-green-500" />
+                      <CheckCircle2 className="h-4 w-4 text-red-500" />
                       <CardDescription>Success Rate</CardDescription>
                     </div>
                     <CardTitle className="text-2xl">
@@ -179,8 +179,8 @@ export function WorkflowAnalyticsView({ workflowId }: WorkflowAnalyticsViewProps
                 </div>
                 {rec.expected_improvement && (
                   <div className="flex items-center gap-2 text-sm">
-                    <TrendingUp className="h-4 w-4 text-green-500" />
-                    <span className="text-green-500">{rec.expected_improvement}</span>
+                    <TrendingUp className="h-4 w-4 text-red-500" />
+                    <span className="text-red-500">{rec.expected_improvement}</span>
                   </div>
                 )}
                 <Button size="sm" variant="outline" className="w-full">

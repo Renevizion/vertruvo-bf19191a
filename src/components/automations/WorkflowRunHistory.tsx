@@ -75,7 +75,7 @@ export function WorkflowRunHistory({ workflowId }: WorkflowRunHistoryProps) {
                         </Badge>
                       )}
                       {run.status === 'completed' && (
-                        <Badge variant="default" className="gap-1 bg-green-500">
+                        <Badge variant="default" className="gap-1 bg-red-500">
                           <CheckCircle2 className="h-3 w-3" />
                           Success
                         </Badge>
@@ -112,7 +112,7 @@ export function WorkflowRunHistory({ workflowId }: WorkflowRunHistoryProps) {
                               <Badge variant="outline" className="text-xs">
                                 {log.type}
                               </Badge>
-                              {log.status === 'success' && <CheckCircle2 className="h-3 w-3 text-green-500" />}
+                              {log.status === 'success' && <CheckCircle2 className="h-3 w-3 text-red-500" />}
                               {log.status === 'failed' && <XCircle className="h-3 w-3 text-destructive" />}
                             </div>
                             <p className="mt-1">{log.message}</p>

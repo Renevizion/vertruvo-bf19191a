@@ -322,7 +322,7 @@ export function AdminAgentCreator({ onAgentGenerated }: AdminAgentCreatorProps) 
                         <span className="font-medium">{source.display_name}</span>
                         <div className="flex gap-2">
                           {source.has_api ? (
-                            <Badge variant="outline" className="text-green-600 border-green-600/30 bg-green-500/10">
+                            <Badge variant="outline" className="text-red-600 border-red-600/30 bg-red-500/10">
                               Has API
                             </Badge>
                           ) : (

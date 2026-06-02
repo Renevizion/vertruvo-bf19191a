@@ -50,7 +50,7 @@ export function WorkflowList({ workflows, selectedId, onSelect, onDelete }: Work
             {/* Status dot */}
             <div className={cn(
               "h-2 w-2 rounded-full flex-shrink-0 mt-0.5",
-              workflow.is_active ? "bg-emerald-500" : "bg-muted-foreground/30"
+              workflow.is_active ? "bg-red-500" : "bg-muted-foreground/30"
             )} />
 
             {/* Content */}

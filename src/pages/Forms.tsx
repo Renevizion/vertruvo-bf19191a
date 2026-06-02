@@ -107,7 +107,7 @@ export default function Forms() {
       <div className="grid grid-cols-3 gap-3 shrink-0">
         {[
           { label: "Total Forms", value: forms.length, color: "text-foreground" },
-          { label: "Active", value: activeForms.length, color: "text-emerald-600 dark:text-emerald-400" },
+          { label: "Active", value: activeForms.length, color: "text-red-600 dark:text-red-400" },
           { label: "Inactive", value: inactiveForms.length, color: "text-muted-foreground" },
         ].map(({ label, value, color }) => (
           <div key={label} className="rounded-xl border bg-card px-4 py-3">
@@ -163,7 +163,7 @@ export default function Forms() {
                           className={cn(
                             "text-[10px] gap-1 shrink-0",
                             form.is_active
-                              ? "border-emerald-400/40 bg-emerald-400/10 text-emerald-600 dark:text-emerald-400"
+                              ? "border-red-400/40 bg-red-400/10 text-red-600 dark:text-red-400"
                               : "text-muted-foreground"
                           )}
                         >
@@ -201,7 +201,7 @@ export default function Forms() {
                       <div className="flex items-start justify-between gap-4">
                         <div className="min-w-0 flex-1">
                           <div className="flex items-center gap-2 mb-1">
-                            <Badge variant="outline" className={cn("text-[10px] gap-1", detailForm.is_active ? "border-emerald-400/40 bg-emerald-400/10 text-emerald-600 dark:text-emerald-400" : "text-muted-foreground")}>
+                            <Badge variant="outline" className={cn("text-[10px] gap-1", detailForm.is_active ? "border-red-400/40 bg-red-400/10 text-red-600 dark:text-red-400" : "text-muted-foreground")}>
                               {detailForm.is_active ? <CheckCircle2 className="h-2.5 w-2.5" /> : <XCircle className="h-2.5 w-2.5" />}
                               {detailForm.is_active ? "Active" : "Inactive"}
                             </Badge>
@@ -225,7 +225,7 @@ export default function Forms() {
                             className="gap-1.5 h-8"
                             onClick={() => handleToggleActive(detailForm.id, detailForm.is_active)}
                           >
-                            {detailForm.is_active ? <ToggleRight className="h-3.5 w-3.5 text-emerald-500" /> : <ToggleLeft className="h-3.5 w-3.5" />}
+                            {detailForm.is_active ? <ToggleRight className="h-3.5 w-3.5 text-red-500" /> : <ToggleLeft className="h-3.5 w-3.5" />}
                             {detailForm.is_active ? "Deactivate" : "Activate"}
                           </Button>
                           <Button
@@ -306,7 +306,7 @@ export default function Forms() {
                   <div className="px-5 py-3 border-b bg-muted/20 flex items-center gap-2">
                     <FileText className="h-4 w-4 text-primary" />
                     <span className="font-semibold text-sm">{form.name}</span>
-                    <Badge variant="outline" className={cn("text-[10px] ml-auto", form.is_active ? "border-emerald-400/40 bg-emerald-400/10 text-emerald-600 dark:text-emerald-400" : "text-muted-foreground")}>
+                    <Badge variant="outline" className={cn("text-[10px] ml-auto", form.is_active ? "border-red-400/40 bg-red-400/10 text-red-600 dark:text-red-400" : "text-muted-foreground")}>
                       {form.is_active ? "Active" : "Inactive"}
                     </Badge>
                   </div>

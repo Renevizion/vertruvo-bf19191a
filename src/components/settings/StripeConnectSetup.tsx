@@ -109,7 +109,7 @@ export function StripeConnectSetup() {
               </CardDescription>
             </div>
             {isOnboarded ? (
-              <Badge variant="default" className="bg-green-600">
+              <Badge variant="default" className="bg-red-600">
                 <CheckCircle2 className="h-3 w-3 mr-1" />
                 Connected
               </Badge>

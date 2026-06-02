@@ -174,7 +174,7 @@ const Automations = () => {
             <h1 className="text-2xl font-bold tracking-tight leading-none">Automations</h1>
           </div>
           {activeCount > 0 && (
-            <Badge className="bg-emerald-600 text-white text-[10px] h-5 px-2 rounded-full">
+            <Badge className="bg-red-600 text-white text-[10px] h-5 px-2 rounded-full">
               {activeCount} active
             </Badge>
           )}
@@ -281,14 +281,14 @@ const Automations = () => {
                     )}
                   >
                     <div className="flex items-center gap-2 mb-1">
-                      <Circle className={cn("h-2 w-2 shrink-0 fill-current", wf.is_active ? "text-emerald-500" : "text-muted-foreground/30")} />
+                      <Circle className={cn("h-2 w-2 shrink-0 fill-current", wf.is_active ? "text-red-500" : "text-muted-foreground/30")} />
                       <span className="text-xs font-semibold truncate flex-1">{wf.name}</span>
                     </div>
                     {wf.description && (
                       <p className="text-[10px] text-muted-foreground line-clamp-2 leading-relaxed pl-4">{wf.description}</p>
                     )}
                     <div className="flex items-center gap-1 mt-1.5 pl-4">
-                      <Badge variant="outline" className={cn("text-[9px] h-4 px-1.5", wf.is_active ? "border-emerald-400/40 text-emerald-600" : "text-muted-foreground")}>
+                      <Badge variant="outline" className={cn("text-[9px] h-4 px-1.5", wf.is_active ? "border-red-400/40 text-red-600" : "text-muted-foreground")}>
                         {wf.is_active ? "Active" : "Inactive"}
                       </Badge>
                     </div>

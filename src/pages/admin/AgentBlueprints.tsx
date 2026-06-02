@@ -186,7 +186,7 @@ export default function AgentBlueprints() {
                     <div className="flex items-center gap-1.5 flex-wrap">
                       <h3 className="font-semibold text-sm truncate">{bp.name}</h3>
                       {bp.is_published ? (
-                        <Badge className="text-[10px] px-1.5 py-0 h-4 bg-emerald-500/15 text-emerald-600 border-0">Published</Badge>
+                        <Badge className="text-[10px] px-1.5 py-0 h-4 bg-red-500/15 text-red-600 border-0">Published</Badge>
                       ) : (
                         <Badge variant="outline" className="text-[10px] px-1.5 py-0 h-4">Draft</Badge>
                       )}

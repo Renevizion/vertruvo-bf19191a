@@ -122,7 +122,7 @@ export default function ShellEditor() {
             <Link to="/admin/shells/manage"><ArrowLeft className="h-4 w-4 mr-1" />All shells</Link>
           </Button>
           <Badge variant="outline">{shell.kind}</Badge>
-          {shell.is_published && <Badge className="bg-emerald-600">Live</Badge>}
+          {shell.is_published && <Badge className="bg-red-600">Live</Badge>}
         </div>
         <div className="flex items-center gap-2">
           <Button asChild variant="outline" size="sm">
@@ -157,9 +157,9 @@ export default function ShellEditor() {
               <Label htmlFor="accent">Accent color</Label>
               <div className="flex gap-2 items-center">
                 <Input id="accent" type="color" className="w-16 h-10 p-1"
-                  value={shell.accent_color ?? "#059669"}
+                  value={shell.accent_color ?? "#dc2626"}
                   onChange={(e) => update("accent_color", e.target.value)} />
-                <Input value={shell.accent_color ?? ""} placeholder="#059669"
+                <Input value={shell.accent_color ?? ""} placeholder="#dc2626"
                   onChange={(e) => update("accent_color", e.target.value)} />
               </div>
             </div>

@@ -155,7 +155,7 @@ export default function RealityDashboard() {
               {items.map((p) => (
                 <div key={p.id} className="flex items-start gap-2 pb-2 border-b border-border/40 last:border-b-0 last:pb-0">
                   {p.passes ? (
-                    <CheckCircle2 className="h-3.5 w-3.5 text-emerald-600 mt-0.5 shrink-0" />
+                    <CheckCircle2 className="h-3.5 w-3.5 text-red-600 mt-0.5 shrink-0" />
                   ) : (
                     <Circle className="h-3.5 w-3.5 text-muted-foreground mt-0.5 shrink-0" />
                   )}

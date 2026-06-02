@@ -376,7 +376,7 @@ export function ToolBuilderDialog({ open, onOpenChange, initialTool, onToolCreat
             <Wrench className="h-5 w-5 text-primary" />
             Build New Tool
             {isValid ? (
-              <Badge variant="default" className="ml-2 bg-green-500">
+              <Badge variant="default" className="ml-2 bg-red-500">
                 <CheckCircle2 className="h-3 w-3 mr-1" />
                 Ready
               </Badge>
@@ -554,7 +554,7 @@ export function ToolBuilderDialog({ open, onOpenChange, initialTool, onToolCreat
                     return (
                       <>
                         {config.capability_category && CAPABILITY_TO_INTEGRATIONS[config.capability_category]?.length > 0 && (
-                          <div className="flex items-center gap-2 p-2 rounded bg-green-50 border border-green-200 text-xs text-green-700">
+                          <div className="flex items-center gap-2 p-2 rounded bg-red-50 border border-red-200 text-xs text-red-700">
                             <CheckCircle2 className="h-3 w-3" />
                             Only showing integrations that support <strong>{config.capability_category.replace(/_/g, ' ')}</strong>
                           </div>
@@ -582,16 +582,16 @@ export function ToolBuilderDialog({ open, onOpenChange, initialTool, onToolCreat
 
                 {selectedIntegration && (
                   <>
-                    <div className="p-3 rounded-lg bg-green-50 border border-green-200">
-                      <p className="text-sm font-medium text-green-800">{selectedIntegration.label} - Auto-configured</p>
+                    <div className="p-3 rounded-lg bg-red-50 border border-red-200">
+                      <p className="text-sm font-medium text-red-800">{selectedIntegration.label} - Auto-configured</p>
                       <div className="flex flex-wrap gap-1 mt-2">
                         {selectedIntegration.capabilities.map(cap => (
-                          <Badge key={cap} variant="secondary" className="text-xs bg-green-100">
+                          <Badge key={cap} variant="secondary" className="text-xs bg-red-100">
                             {cap.replace(/_/g, ' ')}
                           </Badge>
                         ))}
                       </div>
-                      <p className="text-xs text-green-700 mt-2">
+                      <p className="text-xs text-red-700 mt-2">
                         Endpoint: {selectedIntegration.defaultEndpoint} • Auth: {selectedIntegration.authType}
                       </p>
                     </div>
@@ -733,9 +733,9 @@ export function ToolBuilderDialog({ open, onOpenChange, initialTool, onToolCreat
             {/* Internal Function */}
             {config.executor_type === "internal" && (
               <div className="space-y-4 border-t pt-4">
-                <div className="flex items-start gap-2 p-3 rounded-lg bg-green-50 border border-green-200 text-sm">
-                  <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
-                  <p className="text-green-700">
+                <div className="flex items-start gap-2 p-3 rounded-lg bg-red-50 border border-red-200 text-sm">
+                  <CheckCircle2 className="h-4 w-4 text-red-600 mt-0.5 shrink-0" />
+                  <p className="text-red-700">
                     Internal functions execute built-in platform capabilities. No additional configuration needed - the platform handles execution.
                   </p>
                 </div>

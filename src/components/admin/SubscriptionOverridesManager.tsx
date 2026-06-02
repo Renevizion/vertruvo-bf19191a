@@ -263,15 +263,15 @@ export function SubscriptionOverridesManager() {
           </CardContent>
         </Card>
         
-        <Card className="border-green-500/30">
+        <Card className="border-red-500/30">
           <CardHeader className="pb-2">
             <CardTitle className="text-sm font-medium text-muted-foreground flex items-center gap-1.5">
-              <DollarSign className="h-4 w-4 text-green-500" />
+              <DollarSign className="h-4 w-4 text-red-500" />
               Paying Subscribers
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold text-green-600">{subscriptionStats?.totalPaidSubscribers || 0}</div>
+            <div className="text-2xl font-bold text-red-600">{subscriptionStats?.totalPaidSubscribers || 0}</div>
             <p className="text-xs text-muted-foreground">Active Stripe subscriptions</p>
           </CardContent>
         </Card>

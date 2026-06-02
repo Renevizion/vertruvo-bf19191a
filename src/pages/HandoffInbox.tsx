@@ -119,7 +119,7 @@ const HandoffInbox = () => {
           </p>
         </div>
         <Badge variant="outline" className="gap-1">
-          <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" /> Live
+          <span className="h-1.5 w-1.5 rounded-full bg-red-500 animate-pulse" /> Live
         </Badge>
       </div>
 

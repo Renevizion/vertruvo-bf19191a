@@ -141,7 +141,7 @@ export function AIIntegrationSettings() {
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <CheckCircle2 className="h-5 w-5 text-green-500" />
+                <CheckCircle2 className="h-5 w-5 text-red-500" />
                 Thermi AI Gateway (Recommended)
               </CardTitle>
               <CardDescription>
@@ -154,7 +154,7 @@ export function AIIntegrationSettings() {
                   <p className="font-medium">Status: Active</p>
                   <p className="text-sm text-muted-foreground">Ready to use with all agents</p>
                 </div>
-                <Badge variant="default" className="bg-green-500">Connected</Badge>
+                <Badge variant="default" className="bg-red-500">Connected</Badge>
               </div>
 
               <div className="space-y-2">
@@ -262,7 +262,7 @@ export function AIIntegrationSettings() {
                 <Sparkles className="h-4 w-4 text-primary" />
                 <span className="font-medium">Thermi AI Gateway</span>
               </div>
-              <Badge variant="default" className="bg-green-500">Active</Badge>
+              <Badge variant="default" className="bg-red-500">Active</Badge>
             </div>
 
             {hasMistralKey && (

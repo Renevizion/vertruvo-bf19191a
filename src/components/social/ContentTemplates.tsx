@@ -183,12 +183,12 @@ const TEMPLATES: PostTemplate[] = [
 const CATEGORY_LABELS: Record<string, { label: string; color: string }> = {
   quote: { label: "Quote", color: "bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-400" },
   stats: { label: "Stats", color: "bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400" },
-  promo: { label: "Promo", color: "bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400" },
+  promo: { label: "Promo", color: "bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-400" },
   info: { label: "Info", color: "bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-400" },
   photo_overlay: { label: "Photo", color: "bg-pink-100 text-pink-800 dark:bg-pink-900/30 dark:text-pink-400" },
   about: { label: "About", color: "bg-cyan-100 text-cyan-800 dark:bg-cyan-900/30 dark:text-cyan-400" },
   tips: { label: "Tips", color: "bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-400" },
-  before_after: { label: "Before/After", color: "bg-emerald-100 text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-400" },
+  before_after: { label: "Before/After", color: "bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-400" },
   service: { label: "Service", color: "bg-sky-100 text-sky-800 dark:bg-sky-900/30 dark:text-sky-400" },
 };
 

@@ -126,13 +126,13 @@ function StepView({ step }: { step: Step }) {
         <div className="h-7 w-7 rounded-full bg-muted flex items-center justify-center shrink-0"><Bot className="h-3 w-3" /></div>
         <div className="rounded-lg bg-muted px-3 py-2 max-w-[85%] text-sm">
           <MarkdownText content={step.text} />
-          {step.verified && <div className="mt-2 flex items-center gap-1 text-[10px] text-emerald-600"><CheckCircle2 className="h-3 w-3" /> self-verified</div>}
+          {step.verified && <div className="mt-2 flex items-center gap-1 text-[10px] text-red-600"><CheckCircle2 className="h-3 w-3" /> self-verified</div>}
         </div>
       </div>
     );
   }
   // tool card
-  const tone = step.status === "ok" ? "border-emerald-200 bg-emerald-50/50" : step.status === "error" ? "border-destructive/30 bg-destructive/5" : "border-amber-200 bg-amber-50/40";
+  const tone = step.status === "ok" ? "border-red-200 bg-red-50/50" : step.status === "error" ? "border-destructive/30 bg-destructive/5" : "border-amber-200 bg-amber-50/40";
   return (
     <div className={`rounded-md border ${tone} px-3 py-2 text-xs space-y-1`} role="group" aria-label={`Tool ${step.name} ${step.status}`}>
       <div className="flex items-center gap-2 font-mono">

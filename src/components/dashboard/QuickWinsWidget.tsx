@@ -57,8 +57,8 @@ export function QuickWinsWidget() {
       value: stats.activeAgents,
       sublabel: "responding 24/7",
       icon: Clock,
-      color: "text-emerald-500",
-      bgColor: "bg-emerald-500/10",
+      color: "text-red-500",
+      bgColor: "bg-red-500/10",
     },
     {
       label: "Pipeline Leads",

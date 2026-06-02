@@ -31,7 +31,7 @@ interface Blueprint {
 
 // Category styling — gives each tile its own personality
 const CATEGORY_STYLE: Record<string, { icon: any; from: string; to: string; ring: string; chip: string }> = {
-  sales:     { icon: TrendingUp, from: "from-emerald-500/20", to: "to-emerald-500/0",  ring: "ring-emerald-500/30", chip: "bg-emerald-500/15 text-emerald-600" },
+  sales:     { icon: TrendingUp, from: "from-red-500/20", to: "to-red-500/0",  ring: "ring-red-500/30", chip: "bg-red-500/15 text-red-600" },
   support:   { icon: Headphones, from: "from-blue-500/20",    to: "to-blue-500/0",     ring: "ring-blue-500/30",    chip: "bg-blue-500/15 text-blue-600" },
   booking:   { icon: Calendar,   from: "from-violet-500/20",  to: "to-violet-500/0",   ring: "ring-violet-500/30",  chip: "bg-violet-500/15 text-violet-600" },
   marketing: { icon: Megaphone,  from: "from-pink-500/20",    to: "to-pink-500/0",     ring: "ring-pink-500/30",    chip: "bg-pink-500/15 text-pink-600" },
@@ -284,7 +284,7 @@ function FeaturedCard({ bp, installed, onOpen }: { bp: Blueprint; installed?: bo
         </div>
         {installed && (
           <div className="absolute top-3 right-3">
-            <Badge className="text-[10px] bg-emerald-500/15 text-emerald-600 border-0">
+            <Badge className="text-[10px] bg-red-500/15 text-red-600 border-0">
               <CheckCircle2 className="w-2.5 h-2.5 mr-1" />Added
             </Badge>
           </div>
@@ -311,7 +311,7 @@ function CompactCard({ bp, installed, onOpen }: { bp: Blueprint; installed?: boo
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-1.5 mb-0.5">
             <h3 className="font-semibold text-sm truncate">{bp.name}</h3>
-            {installed && <CheckCircle2 className="w-3 h-3 text-emerald-500 shrink-0" />}
+            {installed && <CheckCircle2 className="w-3 h-3 text-red-500 shrink-0" />}
           </div>
           <div className="flex items-center gap-1 flex-wrap">
             <Badge variant="outline" className="text-[9px] px-1 py-0 h-3.5 capitalize">{bp.category || "general"}</Badge>

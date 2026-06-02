@@ -43,7 +43,7 @@ export function AgentMemoryViewer({ agentId }: AgentMemoryViewerProps) {
     const colors: Record<string, string> = {
       conversation: 'bg-blue-500',
       preference: 'bg-purple-500',
-      insight: 'bg-green-500',
+      insight: 'bg-red-500',
       fact: 'bg-orange-500',
       behavior: 'bg-pink-500'
     };

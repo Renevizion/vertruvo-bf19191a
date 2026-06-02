@@ -70,8 +70,8 @@ export function TwilioTrialBanner({ compact = false }: { compact?: boolean }) {
 
   if (isHealthy) {
     return (
-      <Alert className="border-emerald-600/40 bg-emerald-600/5">
-        <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+      <Alert className="border-red-600/40 bg-red-600/5">
+        <CheckCircle2 className="h-4 w-4 text-red-600" />
         <AlertTitle className="flex items-center gap-2">
           Twilio: Production ready
           <Badge variant="outline" className="text-[10px]">{data.type || "Full"}</Badge>

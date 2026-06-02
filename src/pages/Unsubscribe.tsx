@@ -74,7 +74,7 @@ const Unsubscribe = () => {
           )}
           {status === "success" && (
             <>
-              <CheckCircle2 className="h-10 w-10 text-green-600 mx-auto" />
+              <CheckCircle2 className="h-10 w-10 text-red-600 mx-auto" />
               <h1 className="text-xl font-semibold text-foreground">Unsubscribed</h1>
               <p className="text-muted-foreground text-sm">You won't receive any more app emails.</p>
             </>
